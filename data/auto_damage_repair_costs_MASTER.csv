@@ -1,0 +1,1093 @@
+Car_Type,Part,Damage_Type,Severity,New_Part_Cost,Used_Part_Cost,Labor_Hours,Labor_Rate_Per_Hour,Total_Labor_Cost,Total_Cost_New_Part,Total_Cost_Used_Part
+Super,Door,Scrape,Minor,3500,1750,1.8,150,270,3770,2020
+Super,Door,Scrape,Moderate,3500,1750,3.6,150,540,4040,2290
+Super,Door,Scrape,Severe,3500,1750,6,150,900,4400,2650
+Super,Door,Crack,Minor,3500,1750,2.4,150,360,3860,2110
+Super,Door,Crack,Moderate,3500,1750,4.8,150,720,4220,2470
+Super,Door,Crack,Severe,3500,1750,7.8,150,1170,4670,2920
+Super,Door,Dent,Minor,3500,1750,3,150,450,3950,2200
+Super,Door,Dent,Moderate,3500,1750,5.4,150,810,4310,2560
+Super,Door,Dent,Severe,3500,1750,8.4,150,1260,4760,3010
+Super,Door,Missing,Minor,3500,1750,3.6,150,540,4040,2290
+Super,Door,Missing,Moderate,3500,1750,6,150,900,4400,2650
+Super,Door,Missing,Severe,3500,1750,9.6,150,1440,4940,3190
+Super,Front bumper,Scrape,Minor,2800,1400,1.5,150,225,3025,1625
+Super,Front bumper,Scrape,Moderate,2800,1400,3,150,450,3250,1850
+Super,Front bumper,Scrape,Severe,2800,1400,5,150,750,3550,2150
+Super,Front bumper,Crack,Minor,2800,1400,2,150,300,3100,1700
+Super,Front bumper,Crack,Moderate,2800,1400,4,150,600,3400,2000
+Super,Front bumper,Crack,Severe,2800,1400,6.5,150,975,3775,2375
+Super,Front bumper,Dent,Minor,2800,1400,2.5,150,375,3175,1775
+Super,Front bumper,Dent,Moderate,2800,1400,4.5,150,675,3475,2075
+Super,Front bumper,Dent,Severe,2800,1400,7,150,1050,3850,2450
+Super,Front bumper,Missing,Minor,2800,1400,3,150,450,3250,1850
+Super,Front bumper,Missing,Moderate,2800,1400,5,150,750,3550,2150
+Super,Front bumper,Missing,Severe,2800,1400,8,150,1200,4000,2600
+Super,Front fender,Scrape,Minor,2200,1100,1.7,150,255,2455,1355
+Super,Front fender,Scrape,Moderate,2200,1100,3.3,150,495,2695,1595
+Super,Front fender,Scrape,Severe,2200,1100,5.5,150,825,3025,1925
+Super,Front fender,Crack,Minor,2200,1100,2.2,150,330,2530,1430
+Super,Front fender,Crack,Moderate,2200,1100,4.4,150,660,2860,1760
+Super,Front fender,Crack,Severe,2200,1100,7.2,150,1080,3280,2180
+Super,Front fender,Dent,Minor,2200,1100,2.8,150,420,2620,1520
+Super,Front fender,Dent,Moderate,2200,1100,5,150,750,2950,1850
+Super,Front fender,Dent,Severe,2200,1100,7.7,150,1155,3355,2255
+Super,Front fender,Missing,Minor,2200,1100,3.3,150,495,2695,1595
+Super,Front fender,Missing,Moderate,2200,1100,5.5,150,825,3025,1925
+Super,Front fender,Missing,Severe,2200,1100,8.8,150,1320,3520,2420
+Super,Headlight,Scrape,Minor,2500,1250,1.2,150,180,2680,1430
+Super,Headlight,Scrape,Moderate,2500,1250,2.4,150,360,2860,1610
+Super,Headlight,Scrape,Severe,2500,1250,4,150,600,3100,1850
+Super,Headlight,Crack,Minor,2500,1250,1.6,150,240,2740,1490
+Super,Headlight,Crack,Moderate,2500,1250,3.2,150,480,2980,1730
+Super,Headlight,Crack,Severe,2500,1250,5.2,150,780,3280,2030
+Super,Headlight,Dent,Minor,2500,1250,2,150,300,2800,1550
+Super,Headlight,Dent,Moderate,2500,1250,3.6,150,540,3040,1790
+Super,Headlight,Dent,Severe,2500,1250,5.6,150,840,3340,2090
+Super,Headlight,Missing,Minor,2500,1250,2.4,150,360,2860,1610
+Super,Headlight,Missing,Moderate,2500,1250,4,150,600,3100,1850
+Super,Headlight,Missing,Severe,2500,1250,6.4,150,960,3460,2210
+Super,Hood,Scrape,Minor,2800,1400,1.5,150,225,3025,1625
+Super,Hood,Scrape,Moderate,2800,1400,3,150,450,3250,1850
+Super,Hood,Scrape,Severe,2800,1400,5,150,750,3550,2150
+Super,Hood,Crack,Minor,2800,1400,2,150,300,3100,1700
+Super,Hood,Crack,Moderate,2800,1400,4,150,600,3400,2000
+Super,Hood,Crack,Severe,2800,1400,6.5,150,975,3775,2375
+Super,Hood,Dent,Minor,2800,1400,2.5,150,375,3175,1775
+Super,Hood,Dent,Moderate,2800,1400,4.5,150,675,3475,2075
+Super,Hood,Dent,Severe,2800,1400,7,150,1050,3850,2450
+Super,Hood,Missing,Minor,2800,1400,3,150,450,3250,1850
+Super,Hood,Missing,Moderate,2800,1400,5,150,750,3550,2150
+Super,Hood,Missing,Severe,2800,1400,8,150,1200,4000,2600
+Super,Rear bumper,Scrape,Minor,2600,1300,1.5,150,225,2825,1525
+Super,Rear bumper,Scrape,Moderate,2600,1300,3,150,450,3050,1750
+Super,Rear bumper,Scrape,Severe,2600,1300,5,150,750,3350,2050
+Super,Rear bumper,Crack,Minor,2600,1300,2,150,300,2900,1600
+Super,Rear bumper,Crack,Moderate,2600,1300,4,150,600,3200,1900
+Super,Rear bumper,Crack,Severe,2600,1300,6.5,150,975,3575,2275
+Super,Rear bumper,Dent,Minor,2600,1300,2.5,150,375,2975,1675
+Super,Rear bumper,Dent,Moderate,2600,1300,4.5,150,675,3275,1975
+Super,Rear bumper,Dent,Severe,2600,1300,7,150,1050,3650,2350
+Super,Rear bumper,Missing,Minor,2600,1300,3,150,450,3050,1750
+Super,Rear bumper,Missing,Moderate,2600,1300,5,150,750,3350,2050
+Super,Rear bumper,Missing,Severe,2600,1300,8,150,1200,3800,2500
+Super,Rear fender,Scrape,Minor,2000,1000,1.7,150,255,2255,1255
+Super,Rear fender,Scrape,Moderate,2000,1000,3.3,150,495,2495,1495
+Super,Rear fender,Scrape,Severe,2000,1000,5.5,150,825,2825,1825
+Super,Rear fender,Crack,Minor,2000,1000,2.2,150,330,2330,1330
+Super,Rear fender,Crack,Moderate,2000,1000,4.4,150,660,2660,1660
+Super,Rear fender,Crack,Severe,2000,1000,7.2,150,1080,3080,2080
+Super,Rear fender,Dent,Minor,2000,1000,2.8,150,420,2420,1420
+Super,Rear fender,Dent,Moderate,2000,1000,5,150,750,2750,1750
+Super,Rear fender,Dent,Severe,2000,1000,7.7,150,1155,3155,2155
+Super,Rear fender,Missing,Minor,2000,1000,3.3,150,495,2495,1495
+Super,Rear fender,Missing,Moderate,2000,1000,5.5,150,825,2825,1825
+Super,Rear fender,Missing,Severe,2000,1000,8.8,150,1320,3320,2320
+Super,Roof,Scrape,Minor,4500,2250,2.7,150,405,4905,2655
+Super,Roof,Scrape,Moderate,4500,2250,5.4,150,810,5310,3060
+Super,Roof,Scrape,Severe,4500,2250,9,150,1350,5850,3600
+Super,Roof,Crack,Minor,4500,2250,3.6,150,540,5040,2790
+Super,Roof,Crack,Moderate,4500,2250,7.2,150,1080,5580,3330
+Super,Roof,Crack,Severe,4500,2250,11.7,150,1755,6255,4005
+Super,Roof,Dent,Minor,4500,2250,4.5,150,675,5175,2925
+Super,Roof,Dent,Moderate,4500,2250,8.1,150,1215,5715,3465
+Super,Roof,Dent,Severe,4500,2250,12.6,150,1890,6390,4140
+Super,Roof,Missing,Minor,4500,2250,5.4,150,810,5310,3060
+Super,Roof,Missing,Moderate,4500,2250,9,150,1350,5850,3600
+Super,Roof,Missing,Severe,4500,2250,14.4,150,2160,6660,4410
+Super,Taillight,Scrape,Minor,1800,900,1,150,150,1950,1050
+Super,Taillight,Scrape,Moderate,1800,900,2.1,150,315,2115,1215
+Super,Taillight,Scrape,Severe,1800,900,3.5,150,525,2325,1425
+Super,Taillight,Crack,Minor,1800,900,1.4,150,210,2010,1110
+Super,Taillight,Crack,Moderate,1800,900,2.8,150,420,2220,1320
+Super,Taillight,Crack,Severe,1800,900,4.5,150,675,2475,1575
+Super,Taillight,Dent,Minor,1800,900,1.8,150,270,2070,1170
+Super,Taillight,Dent,Moderate,1800,900,3.1,150,465,2265,1365
+Super,Taillight,Dent,Severe,1800,900,4.9,150,735,2535,1635
+Super,Taillight,Missing,Minor,1800,900,2.1,150,315,2115,1215
+Super,Taillight,Missing,Moderate,1800,900,3.5,150,525,2325,1425
+Super,Taillight,Missing,Severe,1800,900,5.6,150,840,2640,1740
+Super,Trunk,Scrape,Minor,2200,1100,1.8,150,270,2470,1370
+Super,Trunk,Scrape,Moderate,2200,1100,3.6,150,540,2740,1640
+Super,Trunk,Scrape,Severe,2200,1100,6,150,900,3100,2000
+Super,Trunk,Crack,Minor,2200,1100,2.4,150,360,2560,1460
+Super,Trunk,Crack,Moderate,2200,1100,4.8,150,720,2920,1820
+Super,Trunk,Crack,Severe,2200,1100,7.8,150,1170,3370,2270
+Super,Trunk,Dent,Minor,2200,1100,3,150,450,2650,1550
+Super,Trunk,Dent,Moderate,2200,1100,5.4,150,810,3010,1910
+Super,Trunk,Dent,Severe,2200,1100,8.4,150,1260,3460,2360
+Super,Trunk,Missing,Minor,2200,1100,3.6,150,540,2740,1640
+Super,Trunk,Missing,Moderate,2200,1100,6,150,900,3100,2000
+Super,Trunk,Missing,Severe,2200,1100,9.6,150,1440,3640,2540
+Super,Wheel,Scrape,Minor,2000,1000,0.9,150,135,2135,1135
+Super,Wheel,Scrape,Moderate,2000,1000,1.8,150,270,2270,1270
+Super,Wheel,Scrape,Severe,2000,1000,3,150,450,2450,1450
+Super,Wheel,Crack,Minor,2000,1000,1.2,150,180,2180,1180
+Super,Wheel,Crack,Moderate,2000,1000,2.4,150,360,2360,1360
+Super,Wheel,Crack,Severe,2000,1000,3.9,150,585,2585,1585
+Super,Wheel,Dent,Minor,2000,1000,1.5,150,225,2225,1225
+Super,Wheel,Dent,Moderate,2000,1000,2.7,150,405,2405,1405
+Super,Wheel,Dent,Severe,2000,1000,4.2,150,630,2630,1630
+Super,Wheel,Missing,Minor,2000,1000,1.8,150,270,2270,1270
+Super,Wheel,Missing,Moderate,2000,1000,3,150,450,2450,1450
+Super,Wheel,Missing,Severe,2000,1000,4.8,150,720,2720,1720
+Super,Window,Scrape,Minor,800,400,1.5,150,225,1025,625
+Super,Window,Scrape,Moderate,800,400,3,150,450,1250,850
+Super,Window,Scrape,Severe,800,400,5,150,750,1550,1150
+Super,Window,Crack,Minor,800,400,2,150,300,1100,700
+Super,Window,Crack,Moderate,800,400,4,150,600,1400,1000
+Super,Window,Crack,Severe,800,400,6.5,150,975,1775,1375
+Super,Window,Dent,Minor,800,400,2.5,150,375,1175,775
+Super,Window,Dent,Moderate,800,400,4.5,150,675,1475,1075
+Super,Window,Dent,Severe,800,400,7,150,1050,1850,1450
+Super,Window,Missing,Minor,800,400,3,150,450,1250,850
+Super,Window,Missing,Moderate,800,400,5,150,750,1550,1150
+Super,Window,Missing,Severe,800,400,8,150,1200,2000,1600
+Super,Windshield,Scrape,Minor,2500,1250,2,150,300,2800,1550
+Super,Windshield,Scrape,Moderate,2500,1250,3.9,150,585,3085,1835
+Super,Windshield,Scrape,Severe,2500,1250,6.5,150,975,3475,2225
+Super,Windshield,Crack,Minor,2500,1250,2.6,150,390,2890,1640
+Super,Windshield,Crack,Moderate,2500,1250,5.2,150,780,3280,2030
+Super,Windshield,Crack,Severe,2500,1250,8.5,150,1275,3775,2525
+Super,Windshield,Dent,Minor,2500,1250,3.2,150,480,2980,1730
+Super,Windshield,Dent,Moderate,2500,1250,5.9,150,885,3385,2135
+Super,Windshield,Dent,Severe,2500,1250,9.1,150,1365,3865,2615
+Super,Windshield,Missing,Minor,2500,1250,3.9,150,585,3085,1835
+Super,Windshield,Missing,Moderate,2500,1250,6.5,150,975,3475,2225
+Super,Windshield,Missing,Severe,2500,1250,10.4,150,1560,4060,2810
+Sport,Door,Scrape,Minor,2500,1250,1.8,130,234,2734,1484
+Sport,Door,Scrape,Moderate,2500,1250,3.6,130,468,2968,1718
+Sport,Door,Scrape,Severe,2500,1250,6,130,780,3280,2030
+Sport,Door,Crack,Minor,2500,1250,2.4,130,312,2812,1562
+Sport,Door,Crack,Moderate,2500,1250,4.8,130,624,3124,1874
+Sport,Door,Crack,Severe,2500,1250,7.8,130,1014,3514,2264
+Sport,Door,Dent,Minor,2500,1250,3,130,390,2890,1640
+Sport,Door,Dent,Moderate,2500,1250,5.4,130,702,3202,1952
+Sport,Door,Dent,Severe,2500,1250,8.4,130,1092,3592,2342
+Sport,Door,Missing,Minor,2500,1250,3.6,130,468,2968,1718
+Sport,Door,Missing,Moderate,2500,1250,6,130,780,3280,2030
+Sport,Door,Missing,Severe,2500,1250,9.6,130,1248,3748,2498
+Sport,Front bumper,Scrape,Minor,1800,900,1.5,130,195,1995,1095
+Sport,Front bumper,Scrape,Moderate,1800,900,3,130,390,2190,1290
+Sport,Front bumper,Scrape,Severe,1800,900,5,130,650,2450,1550
+Sport,Front bumper,Crack,Minor,1800,900,2,130,260,2060,1160
+Sport,Front bumper,Crack,Moderate,1800,900,4,130,520,2320,1420
+Sport,Front bumper,Crack,Severe,1800,900,6.5,130,845,2645,1745
+Sport,Front bumper,Dent,Minor,1800,900,2.5,130,325,2125,1225
+Sport,Front bumper,Dent,Moderate,1800,900,4.5,130,585,2385,1485
+Sport,Front bumper,Dent,Severe,1800,900,7,130,910,2710,1810
+Sport,Front bumper,Missing,Minor,1800,900,3,130,390,2190,1290
+Sport,Front bumper,Missing,Moderate,1800,900,5,130,650,2450,1550
+Sport,Front bumper,Missing,Severe,1800,900,8,130,1040,2840,1940
+Sport,Front fender,Scrape,Minor,1400,700,1.7,130,221,1621,921
+Sport,Front fender,Scrape,Moderate,1400,700,3.3,130,429,1829,1129
+Sport,Front fender,Scrape,Severe,1400,700,5.5,130,715,2115,1415
+Sport,Front fender,Crack,Minor,1400,700,2.2,130,286,1686,986
+Sport,Front fender,Crack,Moderate,1400,700,4.4,130,572,1972,1272
+Sport,Front fender,Crack,Severe,1400,700,7.2,130,936,2336,1636
+Sport,Front fender,Dent,Minor,1400,700,2.8,130,364,1764,1064
+Sport,Front fender,Dent,Moderate,1400,700,5,130,650,2050,1350
+Sport,Front fender,Dent,Severe,1400,700,7.7,130,1001,2401,1701
+Sport,Front fender,Missing,Minor,1400,700,3.3,130,429,1829,1129
+Sport,Front fender,Missing,Moderate,1400,700,5.5,130,715,2115,1415
+Sport,Front fender,Missing,Severe,1400,700,8.8,130,1144,2544,1844
+Sport,Headlight,Scrape,Minor,1500,750,1.2,130,156,1656,906
+Sport,Headlight,Scrape,Moderate,1500,750,2.4,130,312,1812,1062
+Sport,Headlight,Scrape,Severe,1500,750,4,130,520,2020,1270
+Sport,Headlight,Crack,Minor,1500,750,1.6,130,208,1708,958
+Sport,Headlight,Crack,Moderate,1500,750,3.2,130,416,1916,1166
+Sport,Headlight,Crack,Severe,1500,750,5.2,130,676,2176,1426
+Sport,Headlight,Dent,Minor,1500,750,2,130,260,1760,1010
+Sport,Headlight,Dent,Moderate,1500,750,3.6,130,468,1968,1218
+Sport,Headlight,Dent,Severe,1500,750,5.6,130,728,2228,1478
+Sport,Headlight,Missing,Minor,1500,750,2.4,130,312,1812,1062
+Sport,Headlight,Missing,Moderate,1500,750,4,130,520,2020,1270
+Sport,Headlight,Missing,Severe,1500,750,6.4,130,832,2332,1582
+Sport,Hood,Scrape,Minor,1600,800,1.5,130,195,1795,995
+Sport,Hood,Scrape,Moderate,1600,800,3,130,390,1990,1190
+Sport,Hood,Scrape,Severe,1600,800,5,130,650,2250,1450
+Sport,Hood,Crack,Minor,1600,800,2,130,260,1860,1060
+Sport,Hood,Crack,Moderate,1600,800,4,130,520,2120,1320
+Sport,Hood,Crack,Severe,1600,800,6.5,130,845,2445,1645
+Sport,Hood,Dent,Minor,1600,800,2.5,130,325,1925,1125
+Sport,Hood,Dent,Moderate,1600,800,4.5,130,585,2185,1385
+Sport,Hood,Dent,Severe,1600,800,7,130,910,2510,1710
+Sport,Hood,Missing,Minor,1600,800,3,130,390,1990,1190
+Sport,Hood,Missing,Moderate,1600,800,5,130,650,2250,1450
+Sport,Hood,Missing,Severe,1600,800,8,130,1040,2640,1840
+Sport,Rear bumper,Scrape,Minor,1600,800,1.5,130,195,1795,995
+Sport,Rear bumper,Scrape,Moderate,1600,800,3,130,390,1990,1190
+Sport,Rear bumper,Scrape,Severe,1600,800,5,130,650,2250,1450
+Sport,Rear bumper,Crack,Minor,1600,800,2,130,260,1860,1060
+Sport,Rear bumper,Crack,Moderate,1600,800,4,130,520,2120,1320
+Sport,Rear bumper,Crack,Severe,1600,800,6.5,130,845,2445,1645
+Sport,Rear bumper,Dent,Minor,1600,800,2.5,130,325,1925,1125
+Sport,Rear bumper,Dent,Moderate,1600,800,4.5,130,585,2185,1385
+Sport,Rear bumper,Dent,Severe,1600,800,7,130,910,2510,1710
+Sport,Rear bumper,Missing,Minor,1600,800,3,130,390,1990,1190
+Sport,Rear bumper,Missing,Moderate,1600,800,5,130,650,2250,1450
+Sport,Rear bumper,Missing,Severe,1600,800,8,130,1040,2640,1840
+Sport,Rear fender,Scrape,Minor,1300,650,1.7,130,221,1521,871
+Sport,Rear fender,Scrape,Moderate,1300,650,3.3,130,429,1729,1079
+Sport,Rear fender,Scrape,Severe,1300,650,5.5,130,715,2015,1365
+Sport,Rear fender,Crack,Minor,1300,650,2.2,130,286,1586,936
+Sport,Rear fender,Crack,Moderate,1300,650,4.4,130,572,1872,1222
+Sport,Rear fender,Crack,Severe,1300,650,7.2,130,936,2236,1586
+Sport,Rear fender,Dent,Minor,1300,650,2.8,130,364,1664,1014
+Sport,Rear fender,Dent,Moderate,1300,650,5,130,650,1950,1300
+Sport,Rear fender,Dent,Severe,1300,650,7.7,130,1001,2301,1651
+Sport,Rear fender,Missing,Minor,1300,650,3.3,130,429,1729,1079
+Sport,Rear fender,Missing,Moderate,1300,650,5.5,130,715,2015,1365
+Sport,Rear fender,Missing,Severe,1300,650,8.8,130,1144,2444,1794
+Sport,Roof,Scrape,Minor,3200,1600,2.7,130,351,3551,1951
+Sport,Roof,Scrape,Moderate,3200,1600,5.4,130,702,3902,2302
+Sport,Roof,Scrape,Severe,3200,1600,9,130,1170,4370,2770
+Sport,Roof,Crack,Minor,3200,1600,3.6,130,468,3668,2068
+Sport,Roof,Crack,Moderate,3200,1600,7.2,130,936,4136,2536
+Sport,Roof,Crack,Severe,3200,1600,11.7,130,1521,4721,3121
+Sport,Roof,Dent,Minor,3200,1600,4.5,130,585,3785,2185
+Sport,Roof,Dent,Moderate,3200,1600,8.1,130,1053,4253,2653
+Sport,Roof,Dent,Severe,3200,1600,12.6,130,1638,4838,3238
+Sport,Roof,Missing,Minor,3200,1600,5.4,130,702,3902,2302
+Sport,Roof,Missing,Moderate,3200,1600,9,130,1170,4370,2770
+Sport,Roof,Missing,Severe,3200,1600,14.4,130,1872,5072,3472
+Sport,Taillight,Scrape,Minor,1200,600,1,130,130,1330,730
+Sport,Taillight,Scrape,Moderate,1200,600,2.1,130,273,1473,873
+Sport,Taillight,Scrape,Severe,1200,600,3.5,130,455,1655,1055
+Sport,Taillight,Crack,Minor,1200,600,1.4,130,182,1382,782
+Sport,Taillight,Crack,Moderate,1200,600,2.8,130,364,1564,964
+Sport,Taillight,Crack,Severe,1200,600,4.5,130,585,1785,1185
+Sport,Taillight,Dent,Minor,1200,600,1.8,130,234,1434,834
+Sport,Taillight,Dent,Moderate,1200,600,3.1,130,403,1603,1003
+Sport,Taillight,Dent,Severe,1200,600,4.9,130,637,1837,1237
+Sport,Taillight,Missing,Minor,1200,600,2.1,130,273,1473,873
+Sport,Taillight,Missing,Moderate,1200,600,3.5,130,455,1655,1055
+Sport,Taillight,Missing,Severe,1200,600,5.6,130,728,1928,1328
+Sport,Trunk,Scrape,Minor,1400,700,1.8,130,234,1634,934
+Sport,Trunk,Scrape,Moderate,1400,700,3.6,130,468,1868,1168
+Sport,Trunk,Scrape,Severe,1400,700,6,130,780,2180,1480
+Sport,Trunk,Crack,Minor,1400,700,2.4,130,312,1712,1012
+Sport,Trunk,Crack,Moderate,1400,700,4.8,130,624,2024,1324
+Sport,Trunk,Crack,Severe,1400,700,7.8,130,1014,2414,1714
+Sport,Trunk,Dent,Minor,1400,700,3,130,390,1790,1090
+Sport,Trunk,Dent,Moderate,1400,700,5.4,130,702,2102,1402
+Sport,Trunk,Dent,Severe,1400,700,8.4,130,1092,2492,1792
+Sport,Trunk,Missing,Minor,1400,700,3.6,130,468,1868,1168
+Sport,Trunk,Missing,Moderate,1400,700,6,130,780,2180,1480
+Sport,Trunk,Missing,Severe,1400,700,9.6,130,1248,2648,1948
+Sport,Wheel,Scrape,Minor,1200,600,0.9,130,117,1317,717
+Sport,Wheel,Scrape,Moderate,1200,600,1.8,130,234,1434,834
+Sport,Wheel,Scrape,Severe,1200,600,3,130,390,1590,990
+Sport,Wheel,Crack,Minor,1200,600,1.2,130,156,1356,756
+Sport,Wheel,Crack,Moderate,1200,600,2.4,130,312,1512,912
+Sport,Wheel,Crack,Severe,1200,600,3.9,130,507,1707,1107
+Sport,Wheel,Dent,Minor,1200,600,1.5,130,195,1395,795
+Sport,Wheel,Dent,Moderate,1200,600,2.7,130,351,1551,951
+Sport,Wheel,Dent,Severe,1200,600,4.2,130,546,1746,1146
+Sport,Wheel,Missing,Minor,1200,600,1.8,130,234,1434,834
+Sport,Wheel,Missing,Moderate,1200,600,3,130,390,1590,990
+Sport,Wheel,Missing,Severe,1200,600,4.8,130,624,1824,1224
+Sport,Window,Scrape,Minor,600,300,1.5,130,195,795,495
+Sport,Window,Scrape,Moderate,600,300,3,130,390,990,690
+Sport,Window,Scrape,Severe,600,300,5,130,650,1250,950
+Sport,Window,Crack,Minor,600,300,2,130,260,860,560
+Sport,Window,Crack,Moderate,600,300,4,130,520,1120,820
+Sport,Window,Crack,Severe,600,300,6.5,130,845,1445,1145
+Sport,Window,Dent,Minor,600,300,2.5,130,325,925,625
+Sport,Window,Dent,Moderate,600,300,4.5,130,585,1185,885
+Sport,Window,Dent,Severe,600,300,7,130,910,1510,1210
+Sport,Window,Missing,Minor,600,300,3,130,390,990,690
+Sport,Window,Missing,Moderate,600,300,5,130,650,1250,950
+Sport,Window,Missing,Severe,600,300,8,130,1040,1640,1340
+Sport,Windshield,Scrape,Minor,1800,900,2,130,260,2060,1160
+Sport,Windshield,Scrape,Moderate,1800,900,3.9,130,507,2307,1407
+Sport,Windshield,Scrape,Severe,1800,900,6.5,130,845,2645,1745
+Sport,Windshield,Crack,Minor,1800,900,2.6,130,338,2138,1238
+Sport,Windshield,Crack,Moderate,1800,900,5.2,130,676,2476,1576
+Sport,Windshield,Crack,Severe,1800,900,8.5,130,1105,2905,2005
+Sport,Windshield,Dent,Minor,1800,900,3.2,130,416,2216,1316
+Sport,Windshield,Dent,Moderate,1800,900,5.9,130,767,2567,1667
+Sport,Windshield,Dent,Severe,1800,900,9.1,130,1183,2983,2083
+Sport,Windshield,Missing,Minor,1800,900,3.9,130,507,2307,1407
+Sport,Windshield,Missing,Moderate,1800,900,6.5,130,845,2645,1745
+Sport,Windshield,Missing,Severe,1800,900,10.4,130,1352,3152,2252
+Luxury,Door,Scrape,Minor,2200,1100,1.8,125,225,2425,1325
+Luxury,Door,Scrape,Moderate,2200,1100,3.6,125,450,2650,1550
+Luxury,Door,Scrape,Severe,2200,1100,6,125,750,2950,1850
+Luxury,Door,Crack,Minor,2200,1100,2.4,125,300,2500,1400
+Luxury,Door,Crack,Moderate,2200,1100,4.8,125,600,2800,1700
+Luxury,Door,Crack,Severe,2200,1100,7.8,125,975,3175,2075
+Luxury,Door,Dent,Minor,2200,1100,3,125,375,2575,1475
+Luxury,Door,Dent,Moderate,2200,1100,5.4,125,675,2875,1775
+Luxury,Door,Dent,Severe,2200,1100,8.4,125,1050,3250,2150
+Luxury,Door,Missing,Minor,2200,1100,3.6,125,450,2650,1550
+Luxury,Door,Missing,Moderate,2200,1100,6,125,750,2950,1850
+Luxury,Door,Missing,Severe,2200,1100,9.6,125,1200,3400,2300
+Luxury,Front bumper,Scrape,Minor,1600,800,1.5,125,187.5,1787.5,987.5
+Luxury,Front bumper,Scrape,Moderate,1600,800,3,125,375,1975,1175
+Luxury,Front bumper,Scrape,Severe,1600,800,5,125,625,2225,1425
+Luxury,Front bumper,Crack,Minor,1600,800,2,125,250,1850,1050
+Luxury,Front bumper,Crack,Moderate,1600,800,4,125,500,2100,1300
+Luxury,Front bumper,Crack,Severe,1600,800,6.5,125,812.5,2412.5,1612.5
+Luxury,Front bumper,Dent,Minor,1600,800,2.5,125,312.5,1912.5,1112.5
+Luxury,Front bumper,Dent,Moderate,1600,800,4.5,125,562.5,2162.5,1362.5
+Luxury,Front bumper,Dent,Severe,1600,800,7,125,875,2475,1675
+Luxury,Front bumper,Missing,Minor,1600,800,3,125,375,1975,1175
+Luxury,Front bumper,Missing,Moderate,1600,800,5,125,625,2225,1425
+Luxury,Front bumper,Missing,Severe,1600,800,8,125,1000,2600,1800
+Luxury,Front fender,Scrape,Minor,1200,600,1.7,125,212.5,1412.5,812.5
+Luxury,Front fender,Scrape,Moderate,1200,600,3.3,125,412.5,1612.5,1012.5
+Luxury,Front fender,Scrape,Severe,1200,600,5.5,125,687.5,1887.5,1287.5
+Luxury,Front fender,Crack,Minor,1200,600,2.2,125,275,1475,875
+Luxury,Front fender,Crack,Moderate,1200,600,4.4,125,550,1750,1150
+Luxury,Front fender,Crack,Severe,1200,600,7.2,125,900,2100,1500
+Luxury,Front fender,Dent,Minor,1200,600,2.8,125,350,1550,950
+Luxury,Front fender,Dent,Moderate,1200,600,5,125,625,1825,1225
+Luxury,Front fender,Dent,Severe,1200,600,7.7,125,962.5,2162.5,1562.5
+Luxury,Front fender,Missing,Minor,1200,600,3.3,125,412.5,1612.5,1012.5
+Luxury,Front fender,Missing,Moderate,1200,600,5.5,125,687.5,1887.5,1287.5
+Luxury,Front fender,Missing,Severe,1200,600,8.8,125,1100,2300,1700
+Luxury,Headlight,Scrape,Minor,1300,650,1.2,125,150,1450,800
+Luxury,Headlight,Scrape,Moderate,1300,650,2.4,125,300,1600,950
+Luxury,Headlight,Scrape,Severe,1300,650,4,125,500,1800,1150
+Luxury,Headlight,Crack,Minor,1300,650,1.6,125,200,1500,850
+Luxury,Headlight,Crack,Moderate,1300,650,3.2,125,400,1700,1050
+Luxury,Headlight,Crack,Severe,1300,650,5.2,125,650,1950,1300
+Luxury,Headlight,Dent,Minor,1300,650,2,125,250,1550,900
+Luxury,Headlight,Dent,Moderate,1300,650,3.6,125,450,1750,1100
+Luxury,Headlight,Dent,Severe,1300,650,5.6,125,700,2000,1350
+Luxury,Headlight,Missing,Minor,1300,650,2.4,125,300,1600,950
+Luxury,Headlight,Missing,Moderate,1300,650,4,125,500,1800,1150
+Luxury,Headlight,Missing,Severe,1300,650,6.4,125,800,2100,1450
+Luxury,Hood,Scrape,Minor,1400,700,1.5,125,187.5,1587.5,887.5
+Luxury,Hood,Scrape,Moderate,1400,700,3,125,375,1775,1075
+Luxury,Hood,Scrape,Severe,1400,700,5,125,625,2025,1325
+Luxury,Hood,Crack,Minor,1400,700,2,125,250,1650,950
+Luxury,Hood,Crack,Moderate,1400,700,4,125,500,1900,1200
+Luxury,Hood,Crack,Severe,1400,700,6.5,125,812.5,2212.5,1512.5
+Luxury,Hood,Dent,Minor,1400,700,2.5,125,312.5,1712.5,1012.5
+Luxury,Hood,Dent,Moderate,1400,700,4.5,125,562.5,1962.5,1262.5
+Luxury,Hood,Dent,Severe,1400,700,7,125,875,2275,1575
+Luxury,Hood,Missing,Minor,1400,700,3,125,375,1775,1075
+Luxury,Hood,Missing,Moderate,1400,700,5,125,625,2025,1325
+Luxury,Hood,Missing,Severe,1400,700,8,125,1000,2400,1700
+Luxury,Rear bumper,Scrape,Minor,1500,750,1.5,125,187.5,1687.5,937.5
+Luxury,Rear bumper,Scrape,Moderate,1500,750,3,125,375,1875,1125
+Luxury,Rear bumper,Scrape,Severe,1500,750,5,125,625,2125,1375
+Luxury,Rear bumper,Crack,Minor,1500,750,2,125,250,1750,1000
+Luxury,Rear bumper,Crack,Moderate,1500,750,4,125,500,2000,1250
+Luxury,Rear bumper,Crack,Severe,1500,750,6.5,125,812.5,2312.5,1562.5
+Luxury,Rear bumper,Dent,Minor,1500,750,2.5,125,312.5,1812.5,1062.5
+Luxury,Rear bumper,Dent,Moderate,1500,750,4.5,125,562.5,2062.5,1312.5
+Luxury,Rear bumper,Dent,Severe,1500,750,7,125,875,2375,1625
+Luxury,Rear bumper,Missing,Minor,1500,750,3,125,375,1875,1125
+Luxury,Rear bumper,Missing,Moderate,1500,750,5,125,625,2125,1375
+Luxury,Rear bumper,Missing,Severe,1500,750,8,125,1000,2500,1750
+Luxury,Rear fender,Scrape,Minor,1100,550,1.7,125,212.5,1312.5,762.5
+Luxury,Rear fender,Scrape,Moderate,1100,550,3.3,125,412.5,1512.5,962.5
+Luxury,Rear fender,Scrape,Severe,1100,550,5.5,125,687.5,1787.5,1237.5
+Luxury,Rear fender,Crack,Minor,1100,550,2.2,125,275,1375,825
+Luxury,Rear fender,Crack,Moderate,1100,550,4.4,125,550,1650,1100
+Luxury,Rear fender,Crack,Severe,1100,550,7.2,125,900,2000,1450
+Luxury,Rear fender,Dent,Minor,1100,550,2.8,125,350,1450,900
+Luxury,Rear fender,Dent,Moderate,1100,550,5,125,625,1725,1175
+Luxury,Rear fender,Dent,Severe,1100,550,7.7,125,962.5,2062.5,1512.5
+Luxury,Rear fender,Missing,Minor,1100,550,3.3,125,412.5,1512.5,962.5
+Luxury,Rear fender,Missing,Moderate,1100,550,5.5,125,687.5,1787.5,1237.5
+Luxury,Rear fender,Missing,Severe,1100,550,8.8,125,1100,2200,1650
+Luxury,Roof,Scrape,Minor,2800,1400,2.7,125,337.5,3137.5,1737.5
+Luxury,Roof,Scrape,Moderate,2800,1400,5.4,125,675,3475,2075
+Luxury,Roof,Scrape,Severe,2800,1400,9,125,1125,3925,2525
+Luxury,Roof,Crack,Minor,2800,1400,3.6,125,450,3250,1850
+Luxury,Roof,Crack,Moderate,2800,1400,7.2,125,900,3700,2300
+Luxury,Roof,Crack,Severe,2800,1400,11.7,125,1462.5,4262.5,2862.5
+Luxury,Roof,Dent,Minor,2800,1400,4.5,125,562.5,3362.5,1962.5
+Luxury,Roof,Dent,Moderate,2800,1400,8.1,125,1012.5,3812.5,2412.5
+Luxury,Roof,Dent,Severe,2800,1400,12.6,125,1575,4375,2975
+Luxury,Roof,Missing,Minor,2800,1400,5.4,125,675,3475,2075
+Luxury,Roof,Missing,Moderate,2800,1400,9,125,1125,3925,2525
+Luxury,Roof,Missing,Severe,2800,1400,14.4,125,1800,4600,3200
+Luxury,Taillight,Scrape,Minor,1000,500,1,125,125,1125,625
+Luxury,Taillight,Scrape,Moderate,1000,500,2.1,125,262.5,1262.5,762.5
+Luxury,Taillight,Scrape,Severe,1000,500,3.5,125,437.5,1437.5,937.5
+Luxury,Taillight,Crack,Minor,1000,500,1.4,125,175,1175,675
+Luxury,Taillight,Crack,Moderate,1000,500,2.8,125,350,1350,850
+Luxury,Taillight,Crack,Severe,1000,500,4.5,125,562.5,1562.5,1062.5
+Luxury,Taillight,Dent,Minor,1000,500,1.8,125,225,1225,725
+Luxury,Taillight,Dent,Moderate,1000,500,3.1,125,387.5,1387.5,887.5
+Luxury,Taillight,Dent,Severe,1000,500,4.9,125,612.5,1612.5,1112.5
+Luxury,Taillight,Missing,Minor,1000,500,2.1,125,262.5,1262.5,762.5
+Luxury,Taillight,Missing,Moderate,1000,500,3.5,125,437.5,1437.5,937.5
+Luxury,Taillight,Missing,Severe,1000,500,5.6,125,700,1700,1200
+Luxury,Trunk,Scrape,Minor,1200,600,1.8,125,225,1425,825
+Luxury,Trunk,Scrape,Moderate,1200,600,3.6,125,450,1650,1050
+Luxury,Trunk,Scrape,Severe,1200,600,6,125,750,1950,1350
+Luxury,Trunk,Crack,Minor,1200,600,2.4,125,300,1500,900
+Luxury,Trunk,Crack,Moderate,1200,600,4.8,125,600,1800,1200
+Luxury,Trunk,Crack,Severe,1200,600,7.8,125,975,2175,1575
+Luxury,Trunk,Dent,Minor,1200,600,3,125,375,1575,975
+Luxury,Trunk,Dent,Moderate,1200,600,5.4,125,675,1875,1275
+Luxury,Trunk,Dent,Severe,1200,600,8.4,125,1050,2250,1650
+Luxury,Trunk,Missing,Minor,1200,600,3.6,125,450,1650,1050
+Luxury,Trunk,Missing,Moderate,1200,600,6,125,750,1950,1350
+Luxury,Trunk,Missing,Severe,1200,600,9.6,125,1200,2400,1800
+Luxury,Wheel,Scrape,Minor,1000,500,0.9,125,112.5,1112.5,612.5
+Luxury,Wheel,Scrape,Moderate,1000,500,1.8,125,225,1225,725
+Luxury,Wheel,Scrape,Severe,1000,500,3,125,375,1375,875
+Luxury,Wheel,Crack,Minor,1000,500,1.2,125,150,1150,650
+Luxury,Wheel,Crack,Moderate,1000,500,2.4,125,300,1300,800
+Luxury,Wheel,Crack,Severe,1000,500,3.9,125,487.5,1487.5,987.5
+Luxury,Wheel,Dent,Minor,1000,500,1.5,125,187.5,1187.5,687.5
+Luxury,Wheel,Dent,Moderate,1000,500,2.7,125,337.5,1337.5,837.5
+Luxury,Wheel,Dent,Severe,1000,500,4.2,125,525,1525,1025
+Luxury,Wheel,Missing,Minor,1000,500,1.8,125,225,1225,725
+Luxury,Wheel,Missing,Moderate,1000,500,3,125,375,1375,875
+Luxury,Wheel,Missing,Severe,1000,500,4.8,125,600,1600,1100
+Luxury,Window,Scrape,Minor,550,275,1.5,125,187.5,737.5,462.5
+Luxury,Window,Scrape,Moderate,550,275,3,125,375,925,650
+Luxury,Window,Scrape,Severe,550,275,5,125,625,1175,900
+Luxury,Window,Crack,Minor,550,275,2,125,250,800,525
+Luxury,Window,Crack,Moderate,550,275,4,125,500,1050,775
+Luxury,Window,Crack,Severe,550,275,6.5,125,812.5,1362.5,1087.5
+Luxury,Window,Dent,Minor,550,275,2.5,125,312.5,862.5,587.5
+Luxury,Window,Dent,Moderate,550,275,4.5,125,562.5,1112.5,837.5
+Luxury,Window,Dent,Severe,550,275,7,125,875,1425,1150
+Luxury,Window,Missing,Minor,550,275,3,125,375,925,650
+Luxury,Window,Missing,Moderate,550,275,5,125,625,1175,900
+Luxury,Window,Missing,Severe,550,275,8,125,1000,1550,1275
+Luxury,Windshield,Scrape,Minor,1500,750,2,125,250,1750,1000
+Luxury,Windshield,Scrape,Moderate,1500,750,3.9,125,487.5,1987.5,1237.5
+Luxury,Windshield,Scrape,Severe,1500,750,6.5,125,812.5,2312.5,1562.5
+Luxury,Windshield,Crack,Minor,1500,750,2.6,125,325,1825,1075
+Luxury,Windshield,Crack,Moderate,1500,750,5.2,125,650,2150,1400
+Luxury,Windshield,Crack,Severe,1500,750,8.5,125,1062.5,2562.5,1812.5
+Luxury,Windshield,Dent,Minor,1500,750,3.2,125,400,1900,1150
+Luxury,Windshield,Dent,Moderate,1500,750,5.9,125,737.5,2237.5,1487.5
+Luxury,Windshield,Dent,Severe,1500,750,9.1,125,1137.5,2637.5,1887.5
+Luxury,Windshield,Missing,Minor,1500,750,3.9,125,487.5,1987.5,1237.5
+Luxury,Windshield,Missing,Moderate,1500,750,6.5,125,812.5,2312.5,1562.5
+Luxury,Windshield,Missing,Severe,1500,750,10.4,125,1300,2800,2050
+Pickup,Door,Scrape,Minor,1600,800,1.8,95,171,1771,971
+Pickup,Door,Scrape,Moderate,1600,800,3.6,95,342,1942,1142
+Pickup,Door,Scrape,Severe,1600,800,6,95,570,2170,1370
+Pickup,Door,Crack,Minor,1600,800,2.4,95,228,1828,1028
+Pickup,Door,Crack,Moderate,1600,800,4.8,95,456,2056,1256
+Pickup,Door,Crack,Severe,1600,800,7.8,95,741,2341,1541
+Pickup,Door,Dent,Minor,1600,800,3,95,285,1885,1085
+Pickup,Door,Dent,Moderate,1600,800,5.4,95,513,2113,1313
+Pickup,Door,Dent,Severe,1600,800,8.4,95,798,2398,1598
+Pickup,Door,Missing,Minor,1600,800,3.6,95,342,1942,1142
+Pickup,Door,Missing,Moderate,1600,800,6,95,570,2170,1370
+Pickup,Door,Missing,Severe,1600,800,9.6,95,912,2512,1712
+Pickup,Front bumper,Scrape,Minor,1200,600,1.5,95,142.5,1342.5,742.5
+Pickup,Front bumper,Scrape,Moderate,1200,600,3,95,285,1485,885
+Pickup,Front bumper,Scrape,Severe,1200,600,5,95,475,1675,1075
+Pickup,Front bumper,Crack,Minor,1200,600,2,95,190,1390,790
+Pickup,Front bumper,Crack,Moderate,1200,600,4,95,380,1580,980
+Pickup,Front bumper,Crack,Severe,1200,600,6.5,95,617.5,1817.5,1217.5
+Pickup,Front bumper,Dent,Minor,1200,600,2.5,95,237.5,1437.5,837.5
+Pickup,Front bumper,Dent,Moderate,1200,600,4.5,95,427.5,1627.5,1027.5
+Pickup,Front bumper,Dent,Severe,1200,600,7,95,665,1865,1265
+Pickup,Front bumper,Missing,Minor,1200,600,3,95,285,1485,885
+Pickup,Front bumper,Missing,Moderate,1200,600,5,95,475,1675,1075
+Pickup,Front bumper,Missing,Severe,1200,600,8,95,760,1960,1360
+Pickup,Front fender,Scrape,Minor,900,450,1.7,95,161.5,1061.5,611.5
+Pickup,Front fender,Scrape,Moderate,900,450,3.3,95,313.5,1213.5,763.5
+Pickup,Front fender,Scrape,Severe,900,450,5.5,95,522.5,1422.5,972.5
+Pickup,Front fender,Crack,Minor,900,450,2.2,95,209,1109,659
+Pickup,Front fender,Crack,Moderate,900,450,4.4,95,418,1318,868
+Pickup,Front fender,Crack,Severe,900,450,7.2,95,684,1584,1134
+Pickup,Front fender,Dent,Minor,900,450,2.8,95,266,1166,716
+Pickup,Front fender,Dent,Moderate,900,450,5,95,475,1375,925
+Pickup,Front fender,Dent,Severe,900,450,7.7,95,731.5,1631.5,1181.5
+Pickup,Front fender,Missing,Minor,900,450,3.3,95,313.5,1213.5,763.5
+Pickup,Front fender,Missing,Moderate,900,450,5.5,95,522.5,1422.5,972.5
+Pickup,Front fender,Missing,Severe,900,450,8.8,95,836,1736,1286
+Pickup,Headlight,Scrape,Minor,800,400,1.2,95,114,914,514
+Pickup,Headlight,Scrape,Moderate,800,400,2.4,95,228,1028,628
+Pickup,Headlight,Scrape,Severe,800,400,4,95,380,1180,780
+Pickup,Headlight,Crack,Minor,800,400,1.6,95,152,952,552
+Pickup,Headlight,Crack,Moderate,800,400,3.2,95,304,1104,704
+Pickup,Headlight,Crack,Severe,800,400,5.2,95,494,1294,894
+Pickup,Headlight,Dent,Minor,800,400,2,95,190,990,590
+Pickup,Headlight,Dent,Moderate,800,400,3.6,95,342,1142,742
+Pickup,Headlight,Dent,Severe,800,400,5.6,95,532,1332,932
+Pickup,Headlight,Missing,Minor,800,400,2.4,95,228,1028,628
+Pickup,Headlight,Missing,Moderate,800,400,4,95,380,1180,780
+Pickup,Headlight,Missing,Severe,800,400,6.4,95,608,1408,1008
+Pickup,Hood,Scrape,Minor,1000,500,1.5,95,142.5,1142.5,642.5
+Pickup,Hood,Scrape,Moderate,1000,500,3,95,285,1285,785
+Pickup,Hood,Scrape,Severe,1000,500,5,95,475,1475,975
+Pickup,Hood,Crack,Minor,1000,500,2,95,190,1190,690
+Pickup,Hood,Crack,Moderate,1000,500,4,95,380,1380,880
+Pickup,Hood,Crack,Severe,1000,500,6.5,95,617.5,1617.5,1117.5
+Pickup,Hood,Dent,Minor,1000,500,2.5,95,237.5,1237.5,737.5
+Pickup,Hood,Dent,Moderate,1000,500,4.5,95,427.5,1427.5,927.5
+Pickup,Hood,Dent,Severe,1000,500,7,95,665,1665,1165
+Pickup,Hood,Missing,Minor,1000,500,3,95,285,1285,785
+Pickup,Hood,Missing,Moderate,1000,500,5,95,475,1475,975
+Pickup,Hood,Missing,Severe,1000,500,8,95,760,1760,1260
+Pickup,Rear bumper,Scrape,Minor,1100,550,1.5,95,142.5,1242.5,692.5
+Pickup,Rear bumper,Scrape,Moderate,1100,550,3,95,285,1385,835
+Pickup,Rear bumper,Scrape,Severe,1100,550,5,95,475,1575,1025
+Pickup,Rear bumper,Crack,Minor,1100,550,2,95,190,1290,740
+Pickup,Rear bumper,Crack,Moderate,1100,550,4,95,380,1480,930
+Pickup,Rear bumper,Crack,Severe,1100,550,6.5,95,617.5,1717.5,1167.5
+Pickup,Rear bumper,Dent,Minor,1100,550,2.5,95,237.5,1337.5,787.5
+Pickup,Rear bumper,Dent,Moderate,1100,550,4.5,95,427.5,1527.5,977.5
+Pickup,Rear bumper,Dent,Severe,1100,550,7,95,665,1765,1215
+Pickup,Rear bumper,Missing,Minor,1100,550,3,95,285,1385,835
+Pickup,Rear bumper,Missing,Moderate,1100,550,5,95,475,1575,1025
+Pickup,Rear bumper,Missing,Severe,1100,550,8,95,760,1860,1310
+Pickup,Rear fender,Scrape,Minor,850,425,1.7,95,161.5,1011.5,586.5
+Pickup,Rear fender,Scrape,Moderate,850,425,3.3,95,313.5,1163.5,738.5
+Pickup,Rear fender,Scrape,Severe,850,425,5.5,95,522.5,1372.5,947.5
+Pickup,Rear fender,Crack,Minor,850,425,2.2,95,209,1059,634
+Pickup,Rear fender,Crack,Moderate,850,425,4.4,95,418,1268,843
+Pickup,Rear fender,Crack,Severe,850,425,7.2,95,684,1534,1109
+Pickup,Rear fender,Dent,Minor,850,425,2.8,95,266,1116,691
+Pickup,Rear fender,Dent,Moderate,850,425,5,95,475,1325,900
+Pickup,Rear fender,Dent,Severe,850,425,7.7,95,731.5,1581.5,1156.5
+Pickup,Rear fender,Missing,Minor,850,425,3.3,95,313.5,1163.5,738.5
+Pickup,Rear fender,Missing,Moderate,850,425,5.5,95,522.5,1372.5,947.5
+Pickup,Rear fender,Missing,Severe,850,425,8.8,95,836,1686,1261
+Pickup,Roof,Scrape,Minor,2200,1100,2.7,95,256.5,2456.5,1356.5
+Pickup,Roof,Scrape,Moderate,2200,1100,5.4,95,513,2713,1613
+Pickup,Roof,Scrape,Severe,2200,1100,9,95,855,3055,1955
+Pickup,Roof,Crack,Minor,2200,1100,3.6,95,342,2542,1442
+Pickup,Roof,Crack,Moderate,2200,1100,7.2,95,684,2884,1784
+Pickup,Roof,Crack,Severe,2200,1100,11.7,95,1111.5,3311.5,2211.5
+Pickup,Roof,Dent,Minor,2200,1100,4.5,95,427.5,2627.5,1527.5
+Pickup,Roof,Dent,Moderate,2200,1100,8.1,95,769.5,2969.5,1869.5
+Pickup,Roof,Dent,Severe,2200,1100,12.6,95,1197,3397,2297
+Pickup,Roof,Missing,Minor,2200,1100,5.4,95,513,2713,1613
+Pickup,Roof,Missing,Moderate,2200,1100,9,95,855,3055,1955
+Pickup,Roof,Missing,Severe,2200,1100,14.4,95,1368,3568,2468
+Pickup,Taillight,Scrape,Minor,650,325,1,95,95,745,420
+Pickup,Taillight,Scrape,Moderate,650,325,2.1,95,199.5,849.5,524.5
+Pickup,Taillight,Scrape,Severe,650,325,3.5,95,332.5,982.5,657.5
+Pickup,Taillight,Crack,Minor,650,325,1.4,95,133,783,458
+Pickup,Taillight,Crack,Moderate,650,325,2.8,95,266,916,591
+Pickup,Taillight,Crack,Severe,650,325,4.5,95,427.5,1077.5,752.5
+Pickup,Taillight,Dent,Minor,650,325,1.8,95,171,821,496
+Pickup,Taillight,Dent,Moderate,650,325,3.1,95,294.5,944.5,619.5
+Pickup,Taillight,Dent,Severe,650,325,4.9,95,465.5,1115.5,790.5
+Pickup,Taillight,Missing,Minor,650,325,2.1,95,199.5,849.5,524.5
+Pickup,Taillight,Missing,Moderate,650,325,3.5,95,332.5,982.5,657.5
+Pickup,Taillight,Missing,Severe,650,325,5.6,95,532,1182,857
+Pickup,Trunk,Scrape,Minor,900,450,1.8,95,171,1071,621
+Pickup,Trunk,Scrape,Moderate,900,450,3.6,95,342,1242,792
+Pickup,Trunk,Scrape,Severe,900,450,6,95,570,1470,1020
+Pickup,Trunk,Crack,Minor,900,450,2.4,95,228,1128,678
+Pickup,Trunk,Crack,Moderate,900,450,4.8,95,456,1356,906
+Pickup,Trunk,Crack,Severe,900,450,7.8,95,741,1641,1191
+Pickup,Trunk,Dent,Minor,900,450,3,95,285,1185,735
+Pickup,Trunk,Dent,Moderate,900,450,5.4,95,513,1413,963
+Pickup,Trunk,Dent,Severe,900,450,8.4,95,798,1698,1248
+Pickup,Trunk,Missing,Minor,900,450,3.6,95,342,1242,792
+Pickup,Trunk,Missing,Moderate,900,450,6,95,570,1470,1020
+Pickup,Trunk,Missing,Severe,900,450,9.6,95,912,1812,1362
+Pickup,Wheel,Scrape,Minor,700,350,0.9,95,85.5,785.5,435.5
+Pickup,Wheel,Scrape,Moderate,700,350,1.8,95,171,871,521
+Pickup,Wheel,Scrape,Severe,700,350,3,95,285,985,635
+Pickup,Wheel,Crack,Minor,700,350,1.2,95,114,814,464
+Pickup,Wheel,Crack,Moderate,700,350,2.4,95,228,928,578
+Pickup,Wheel,Crack,Severe,700,350,3.9,95,370.5,1070.5,720.5
+Pickup,Wheel,Dent,Minor,700,350,1.5,95,142.5,842.5,492.5
+Pickup,Wheel,Dent,Moderate,700,350,2.7,95,256.5,956.5,606.5
+Pickup,Wheel,Dent,Severe,700,350,4.2,95,399,1099,749
+Pickup,Wheel,Missing,Minor,700,350,1.8,95,171,871,521
+Pickup,Wheel,Missing,Moderate,700,350,3,95,285,985,635
+Pickup,Wheel,Missing,Severe,700,350,4.8,95,456,1156,806
+Pickup,Window,Scrape,Minor,400,200,1.5,95,142.5,542.5,342.5
+Pickup,Window,Scrape,Moderate,400,200,3,95,285,685,485
+Pickup,Window,Scrape,Severe,400,200,5,95,475,875,675
+Pickup,Window,Crack,Minor,400,200,2,95,190,590,390
+Pickup,Window,Crack,Moderate,400,200,4,95,380,780,580
+Pickup,Window,Crack,Severe,400,200,6.5,95,617.5,1017.5,817.5
+Pickup,Window,Dent,Minor,400,200,2.5,95,237.5,637.5,437.5
+Pickup,Window,Dent,Moderate,400,200,4.5,95,427.5,827.5,627.5
+Pickup,Window,Dent,Severe,400,200,7,95,665,1065,865
+Pickup,Window,Missing,Minor,400,200,3,95,285,685,485
+Pickup,Window,Missing,Moderate,400,200,5,95,475,875,675
+Pickup,Window,Missing,Severe,400,200,8,95,760,1160,960
+Pickup,Windshield,Scrape,Minor,1000,500,2,95,190,1190,690
+Pickup,Windshield,Scrape,Moderate,1000,500,3.9,95,370.5,1370.5,870.5
+Pickup,Windshield,Scrape,Severe,1000,500,6.5,95,617.5,1617.5,1117.5
+Pickup,Windshield,Crack,Minor,1000,500,2.6,95,247,1247,747
+Pickup,Windshield,Crack,Moderate,1000,500,5.2,95,494,1494,994
+Pickup,Windshield,Crack,Severe,1000,500,8.5,95,807.5,1807.5,1307.5
+Pickup,Windshield,Dent,Minor,1000,500,3.2,95,304,1304,804
+Pickup,Windshield,Dent,Moderate,1000,500,5.9,95,560.5,1560.5,1060.5
+Pickup,Windshield,Dent,Severe,1000,500,9.1,95,864.5,1864.5,1364.5
+Pickup,Windshield,Missing,Minor,1000,500,3.9,95,370.5,1370.5,870.5
+Pickup,Windshield,Missing,Moderate,1000,500,6.5,95,617.5,1617.5,1117.5
+Pickup,Windshield,Missing,Severe,1000,500,10.4,95,988,1988,1488
+SUV,Door,Scrape,Minor,1400,700,1.8,95,171,1571,871
+SUV,Door,Scrape,Moderate,1400,700,3.6,95,342,1742,1042
+SUV,Door,Scrape,Severe,1400,700,6,95,570,1970,1270
+SUV,Door,Crack,Minor,1400,700,2.4,95,228,1628,928
+SUV,Door,Crack,Moderate,1400,700,4.8,95,456,1856,1156
+SUV,Door,Crack,Severe,1400,700,7.8,95,741,2141,1441
+SUV,Door,Dent,Minor,1400,700,3,95,285,1685,985
+SUV,Door,Dent,Moderate,1400,700,5.4,95,513,1913,1213
+SUV,Door,Dent,Severe,1400,700,8.4,95,798,2198,1498
+SUV,Door,Missing,Minor,1400,700,3.6,95,342,1742,1042
+SUV,Door,Missing,Moderate,1400,700,6,95,570,1970,1270
+SUV,Door,Missing,Severe,1400,700,9.6,95,912,2312,1612
+SUV,Front bumper,Scrape,Minor,1000,500,1.5,95,142.5,1142.5,642.5
+SUV,Front bumper,Scrape,Moderate,1000,500,3,95,285,1285,785
+SUV,Front bumper,Scrape,Severe,1000,500,5,95,475,1475,975
+SUV,Front bumper,Crack,Minor,1000,500,2,95,190,1190,690
+SUV,Front bumper,Crack,Moderate,1000,500,4,95,380,1380,880
+SUV,Front bumper,Crack,Severe,1000,500,6.5,95,617.5,1617.5,1117.5
+SUV,Front bumper,Dent,Minor,1000,500,2.5,95,237.5,1237.5,737.5
+SUV,Front bumper,Dent,Moderate,1000,500,4.5,95,427.5,1427.5,927.5
+SUV,Front bumper,Dent,Severe,1000,500,7,95,665,1665,1165
+SUV,Front bumper,Missing,Minor,1000,500,3,95,285,1285,785
+SUV,Front bumper,Missing,Moderate,1000,500,5,95,475,1475,975
+SUV,Front bumper,Missing,Severe,1000,500,8,95,760,1760,1260
+SUV,Front fender,Scrape,Minor,750,375,1.7,95,161.5,911.5,536.5
+SUV,Front fender,Scrape,Moderate,750,375,3.3,95,313.5,1063.5,688.5
+SUV,Front fender,Scrape,Severe,750,375,5.5,95,522.5,1272.5,897.5
+SUV,Front fender,Crack,Minor,750,375,2.2,95,209,959,584
+SUV,Front fender,Crack,Moderate,750,375,4.4,95,418,1168,793
+SUV,Front fender,Crack,Severe,750,375,7.2,95,684,1434,1059
+SUV,Front fender,Dent,Minor,750,375,2.8,95,266,1016,641
+SUV,Front fender,Dent,Moderate,750,375,5,95,475,1225,850
+SUV,Front fender,Dent,Severe,750,375,7.7,95,731.5,1481.5,1106.5
+SUV,Front fender,Missing,Minor,750,375,3.3,95,313.5,1063.5,688.5
+SUV,Front fender,Missing,Moderate,750,375,5.5,95,522.5,1272.5,897.5
+SUV,Front fender,Missing,Severe,750,375,8.8,95,836,1586,1211
+SUV,Headlight,Scrape,Minor,700,350,1.2,95,114,814,464
+SUV,Headlight,Scrape,Moderate,700,350,2.4,95,228,928,578
+SUV,Headlight,Scrape,Severe,700,350,4,95,380,1080,730
+SUV,Headlight,Crack,Minor,700,350,1.6,95,152,852,502
+SUV,Headlight,Crack,Moderate,700,350,3.2,95,304,1004,654
+SUV,Headlight,Crack,Severe,700,350,5.2,95,494,1194,844
+SUV,Headlight,Dent,Minor,700,350,2,95,190,890,540
+SUV,Headlight,Dent,Moderate,700,350,3.6,95,342,1042,692
+SUV,Headlight,Dent,Severe,700,350,5.6,95,532,1232,882
+SUV,Headlight,Missing,Minor,700,350,2.4,95,228,928,578
+SUV,Headlight,Missing,Moderate,700,350,4,95,380,1080,730
+SUV,Headlight,Missing,Severe,700,350,6.4,95,608,1308,958
+SUV,Hood,Scrape,Minor,900,450,1.5,95,142.5,1042.5,592.5
+SUV,Hood,Scrape,Moderate,900,450,3,95,285,1185,735
+SUV,Hood,Scrape,Severe,900,450,5,95,475,1375,925
+SUV,Hood,Crack,Minor,900,450,2,95,190,1090,640
+SUV,Hood,Crack,Moderate,900,450,4,95,380,1280,830
+SUV,Hood,Crack,Severe,900,450,6.5,95,617.5,1517.5,1067.5
+SUV,Hood,Dent,Minor,900,450,2.5,95,237.5,1137.5,687.5
+SUV,Hood,Dent,Moderate,900,450,4.5,95,427.5,1327.5,877.5
+SUV,Hood,Dent,Severe,900,450,7,95,665,1565,1115
+SUV,Hood,Missing,Minor,900,450,3,95,285,1185,735
+SUV,Hood,Missing,Moderate,900,450,5,95,475,1375,925
+SUV,Hood,Missing,Severe,900,450,8,95,760,1660,1210
+SUV,Rear bumper,Scrape,Minor,950,475,1.5,95,142.5,1092.5,617.5
+SUV,Rear bumper,Scrape,Moderate,950,475,3,95,285,1235,760
+SUV,Rear bumper,Scrape,Severe,950,475,5,95,475,1425,950
+SUV,Rear bumper,Crack,Minor,950,475,2,95,190,1140,665
+SUV,Rear bumper,Crack,Moderate,950,475,4,95,380,1330,855
+SUV,Rear bumper,Crack,Severe,950,475,6.5,95,617.5,1567.5,1092.5
+SUV,Rear bumper,Dent,Minor,950,475,2.5,95,237.5,1187.5,712.5
+SUV,Rear bumper,Dent,Moderate,950,475,4.5,95,427.5,1377.5,902.5
+SUV,Rear bumper,Dent,Severe,950,475,7,95,665,1615,1140
+SUV,Rear bumper,Missing,Minor,950,475,3,95,285,1235,760
+SUV,Rear bumper,Missing,Moderate,950,475,5,95,475,1425,950
+SUV,Rear bumper,Missing,Severe,950,475,8,95,760,1710,1235
+SUV,Rear fender,Scrape,Minor,700,350,1.7,95,161.5,861.5,511.5
+SUV,Rear fender,Scrape,Moderate,700,350,3.3,95,313.5,1013.5,663.5
+SUV,Rear fender,Scrape,Severe,700,350,5.5,95,522.5,1222.5,872.5
+SUV,Rear fender,Crack,Minor,700,350,2.2,95,209,909,559
+SUV,Rear fender,Crack,Moderate,700,350,4.4,95,418,1118,768
+SUV,Rear fender,Crack,Severe,700,350,7.2,95,684,1384,1034
+SUV,Rear fender,Dent,Minor,700,350,2.8,95,266,966,616
+SUV,Rear fender,Dent,Moderate,700,350,5,95,475,1175,825
+SUV,Rear fender,Dent,Severe,700,350,7.7,95,731.5,1431.5,1081.5
+SUV,Rear fender,Missing,Minor,700,350,3.3,95,313.5,1013.5,663.5
+SUV,Rear fender,Missing,Moderate,700,350,5.5,95,522.5,1222.5,872.5
+SUV,Rear fender,Missing,Severe,700,350,8.8,95,836,1536,1186
+SUV,Roof,Scrape,Minor,2000,1000,2.7,95,256.5,2256.5,1256.5
+SUV,Roof,Scrape,Moderate,2000,1000,5.4,95,513,2513,1513
+SUV,Roof,Scrape,Severe,2000,1000,9,95,855,2855,1855
+SUV,Roof,Crack,Minor,2000,1000,3.6,95,342,2342,1342
+SUV,Roof,Crack,Moderate,2000,1000,7.2,95,684,2684,1684
+SUV,Roof,Crack,Severe,2000,1000,11.7,95,1111.5,3111.5,2111.5
+SUV,Roof,Dent,Minor,2000,1000,4.5,95,427.5,2427.5,1427.5
+SUV,Roof,Dent,Moderate,2000,1000,8.1,95,769.5,2769.5,1769.5
+SUV,Roof,Dent,Severe,2000,1000,12.6,95,1197,3197,2197
+SUV,Roof,Missing,Minor,2000,1000,5.4,95,513,2513,1513
+SUV,Roof,Missing,Moderate,2000,1000,9,95,855,2855,1855
+SUV,Roof,Missing,Severe,2000,1000,14.4,95,1368,3368,2368
+SUV,Taillight,Scrape,Minor,550,275,1,95,95,645,370
+SUV,Taillight,Scrape,Moderate,550,275,2.1,95,199.5,749.5,474.5
+SUV,Taillight,Scrape,Severe,550,275,3.5,95,332.5,882.5,607.5
+SUV,Taillight,Crack,Minor,550,275,1.4,95,133,683,408
+SUV,Taillight,Crack,Moderate,550,275,2.8,95,266,816,541
+SUV,Taillight,Crack,Severe,550,275,4.5,95,427.5,977.5,702.5
+SUV,Taillight,Dent,Minor,550,275,1.8,95,171,721,446
+SUV,Taillight,Dent,Moderate,550,275,3.1,95,294.5,844.5,569.5
+SUV,Taillight,Dent,Severe,550,275,4.9,95,465.5,1015.5,740.5
+SUV,Taillight,Missing,Minor,550,275,2.1,95,199.5,749.5,474.5
+SUV,Taillight,Missing,Moderate,550,275,3.5,95,332.5,882.5,607.5
+SUV,Taillight,Missing,Severe,550,275,5.6,95,532,1082,807
+SUV,Trunk,Scrape,Minor,800,400,1.8,95,171,971,571
+SUV,Trunk,Scrape,Moderate,800,400,3.6,95,342,1142,742
+SUV,Trunk,Scrape,Severe,800,400,6,95,570,1370,970
+SUV,Trunk,Crack,Minor,800,400,2.4,95,228,1028,628
+SUV,Trunk,Crack,Moderate,800,400,4.8,95,456,1256,856
+SUV,Trunk,Crack,Severe,800,400,7.8,95,741,1541,1141
+SUV,Trunk,Dent,Minor,800,400,3,95,285,1085,685
+SUV,Trunk,Dent,Moderate,800,400,5.4,95,513,1313,913
+SUV,Trunk,Dent,Severe,800,400,8.4,95,798,1598,1198
+SUV,Trunk,Missing,Minor,800,400,3.6,95,342,1142,742
+SUV,Trunk,Missing,Moderate,800,400,6,95,570,1370,970
+SUV,Trunk,Missing,Severe,800,400,9.6,95,912,1712,1312
+SUV,Wheel,Scrape,Minor,600,300,0.9,95,85.5,685.5,385.5
+SUV,Wheel,Scrape,Moderate,600,300,1.8,95,171,771,471
+SUV,Wheel,Scrape,Severe,600,300,3,95,285,885,585
+SUV,Wheel,Crack,Minor,600,300,1.2,95,114,714,414
+SUV,Wheel,Crack,Moderate,600,300,2.4,95,228,828,528
+SUV,Wheel,Crack,Severe,600,300,3.9,95,370.5,970.5,670.5
+SUV,Wheel,Dent,Minor,600,300,1.5,95,142.5,742.5,442.5
+SUV,Wheel,Dent,Moderate,600,300,2.7,95,256.5,856.5,556.5
+SUV,Wheel,Dent,Severe,600,300,4.2,95,399,999,699
+SUV,Wheel,Missing,Minor,600,300,1.8,95,171,771,471
+SUV,Wheel,Missing,Moderate,600,300,3,95,285,885,585
+SUV,Wheel,Missing,Severe,600,300,4.8,95,456,1056,756
+SUV,Window,Scrape,Minor,350,175,1.5,95,142.5,492.5,317.5
+SUV,Window,Scrape,Moderate,350,175,3,95,285,635,460
+SUV,Window,Scrape,Severe,350,175,5,95,475,825,650
+SUV,Window,Crack,Minor,350,175,2,95,190,540,365
+SUV,Window,Crack,Moderate,350,175,4,95,380,730,555
+SUV,Window,Crack,Severe,350,175,6.5,95,617.5,967.5,792.5
+SUV,Window,Dent,Minor,350,175,2.5,95,237.5,587.5,412.5
+SUV,Window,Dent,Moderate,350,175,4.5,95,427.5,777.5,602.5
+SUV,Window,Dent,Severe,350,175,7,95,665,1015,840
+SUV,Window,Missing,Minor,350,175,3,95,285,635,460
+SUV,Window,Missing,Moderate,350,175,5,95,475,825,650
+SUV,Window,Missing,Severe,350,175,8,95,760,1110,935
+SUV,Windshield,Scrape,Minor,900,450,2,95,190,1090,640
+SUV,Windshield,Scrape,Moderate,900,450,3.9,95,370.5,1270.5,820.5
+SUV,Windshield,Scrape,Severe,900,450,6.5,95,617.5,1517.5,1067.5
+SUV,Windshield,Crack,Minor,900,450,2.6,95,247,1147,697
+SUV,Windshield,Crack,Moderate,900,450,5.2,95,494,1394,944
+SUV,Windshield,Crack,Severe,900,450,8.5,95,807.5,1707.5,1257.5
+SUV,Windshield,Dent,Minor,900,450,3.2,95,304,1204,754
+SUV,Windshield,Dent,Moderate,900,450,5.9,95,560.5,1460.5,1010.5
+SUV,Windshield,Dent,Severe,900,450,9.1,95,864.5,1764.5,1314.5
+SUV,Windshield,Missing,Minor,900,450,3.9,95,370.5,1270.5,820.5
+SUV,Windshield,Missing,Moderate,900,450,6.5,95,617.5,1517.5,1067.5
+SUV,Windshield,Missing,Severe,900,450,10.4,95,988,1888,1438
+Minivan,Door,Scrape,Minor,1100,550,1.8,85,153,1253,703
+Minivan,Door,Scrape,Moderate,1100,550,3.6,85,306,1406,856
+Minivan,Door,Scrape,Severe,1100,550,6,85,510,1610,1060
+Minivan,Door,Crack,Minor,1100,550,2.4,85,204,1304,754
+Minivan,Door,Crack,Moderate,1100,550,4.8,85,408,1508,958
+Minivan,Door,Crack,Severe,1100,550,7.8,85,663,1763,1213
+Minivan,Door,Dent,Minor,1100,550,3,85,255,1355,805
+Minivan,Door,Dent,Moderate,1100,550,5.4,85,459,1559,1009
+Minivan,Door,Dent,Severe,1100,550,8.4,85,714,1814,1264
+Minivan,Door,Missing,Minor,1100,550,3.6,85,306,1406,856
+Minivan,Door,Missing,Moderate,1100,550,6,85,510,1610,1060
+Minivan,Door,Missing,Severe,1100,550,9.6,85,816,1916,1366
+Minivan,Front bumper,Scrape,Minor,800,400,1.5,85,127.5,927.5,527.5
+Minivan,Front bumper,Scrape,Moderate,800,400,3,85,255,1055,655
+Minivan,Front bumper,Scrape,Severe,800,400,5,85,425,1225,825
+Minivan,Front bumper,Crack,Minor,800,400,2,85,170,970,570
+Minivan,Front bumper,Crack,Moderate,800,400,4,85,340,1140,740
+Minivan,Front bumper,Crack,Severe,800,400,6.5,85,552.5,1352.5,952.5
+Minivan,Front bumper,Dent,Minor,800,400,2.5,85,212.5,1012.5,612.5
+Minivan,Front bumper,Dent,Moderate,800,400,4.5,85,382.5,1182.5,782.5
+Minivan,Front bumper,Dent,Severe,800,400,7,85,595,1395,995
+Minivan,Front bumper,Missing,Minor,800,400,3,85,255,1055,655
+Minivan,Front bumper,Missing,Moderate,800,400,5,85,425,1225,825
+Minivan,Front bumper,Missing,Severe,800,400,8,85,680,1480,1080
+Minivan,Front fender,Scrape,Minor,600,300,1.7,85,144.5,744.5,444.5
+Minivan,Front fender,Scrape,Moderate,600,300,3.3,85,280.5,880.5,580.5
+Minivan,Front fender,Scrape,Severe,600,300,5.5,85,467.5,1067.5,767.5
+Minivan,Front fender,Crack,Minor,600,300,2.2,85,187,787,487
+Minivan,Front fender,Crack,Moderate,600,300,4.4,85,374,974,674
+Minivan,Front fender,Crack,Severe,600,300,7.2,85,612,1212,912
+Minivan,Front fender,Dent,Minor,600,300,2.8,85,238,838,538
+Minivan,Front fender,Dent,Moderate,600,300,5,85,425,1025,725
+Minivan,Front fender,Dent,Severe,600,300,7.7,85,654.5,1254.5,954.5
+Minivan,Front fender,Missing,Minor,600,300,3.3,85,280.5,880.5,580.5
+Minivan,Front fender,Missing,Moderate,600,300,5.5,85,467.5,1067.5,767.5
+Minivan,Front fender,Missing,Severe,600,300,8.8,85,748,1348,1048
+Minivan,Headlight,Scrape,Minor,500,250,1.2,85,102,602,352
+Minivan,Headlight,Scrape,Moderate,500,250,2.4,85,204,704,454
+Minivan,Headlight,Scrape,Severe,500,250,4,85,340,840,590
+Minivan,Headlight,Crack,Minor,500,250,1.6,85,136,636,386
+Minivan,Headlight,Crack,Moderate,500,250,3.2,85,272,772,522
+Minivan,Headlight,Crack,Severe,500,250,5.2,85,442,942,692
+Minivan,Headlight,Dent,Minor,500,250,2,85,170,670,420
+Minivan,Headlight,Dent,Moderate,500,250,3.6,85,306,806,556
+Minivan,Headlight,Dent,Severe,500,250,5.6,85,476,976,726
+Minivan,Headlight,Missing,Minor,500,250,2.4,85,204,704,454
+Minivan,Headlight,Missing,Moderate,500,250,4,85,340,840,590
+Minivan,Headlight,Missing,Severe,500,250,6.4,85,544,1044,794
+Minivan,Hood,Scrape,Minor,700,350,1.5,85,127.5,827.5,477.5
+Minivan,Hood,Scrape,Moderate,700,350,3,85,255,955,605
+Minivan,Hood,Scrape,Severe,700,350,5,85,425,1125,775
+Minivan,Hood,Crack,Minor,700,350,2,85,170,870,520
+Minivan,Hood,Crack,Moderate,700,350,4,85,340,1040,690
+Minivan,Hood,Crack,Severe,700,350,6.5,85,552.5,1252.5,902.5
+Minivan,Hood,Dent,Minor,700,350,2.5,85,212.5,912.5,562.5
+Minivan,Hood,Dent,Moderate,700,350,4.5,85,382.5,1082.5,732.5
+Minivan,Hood,Dent,Severe,700,350,7,85,595,1295,945
+Minivan,Hood,Missing,Minor,700,350,3,85,255,955,605
+Minivan,Hood,Missing,Moderate,700,350,5,85,425,1125,775
+Minivan,Hood,Missing,Severe,700,350,8,85,680,1380,1030
+Minivan,Rear bumper,Scrape,Minor,750,375,1.5,85,127.5,877.5,502.5
+Minivan,Rear bumper,Scrape,Moderate,750,375,3,85,255,1005,630
+Minivan,Rear bumper,Scrape,Severe,750,375,5,85,425,1175,800
+Minivan,Rear bumper,Crack,Minor,750,375,2,85,170,920,545
+Minivan,Rear bumper,Crack,Moderate,750,375,4,85,340,1090,715
+Minivan,Rear bumper,Crack,Severe,750,375,6.5,85,552.5,1302.5,927.5
+Minivan,Rear bumper,Dent,Minor,750,375,2.5,85,212.5,962.5,587.5
+Minivan,Rear bumper,Dent,Moderate,750,375,4.5,85,382.5,1132.5,757.5
+Minivan,Rear bumper,Dent,Severe,750,375,7,85,595,1345,970
+Minivan,Rear bumper,Missing,Minor,750,375,3,85,255,1005,630
+Minivan,Rear bumper,Missing,Moderate,750,375,5,85,425,1175,800
+Minivan,Rear bumper,Missing,Severe,750,375,8,85,680,1430,1055
+Minivan,Rear fender,Scrape,Minor,550,275,1.7,85,144.5,694.5,419.5
+Minivan,Rear fender,Scrape,Moderate,550,275,3.3,85,280.5,830.5,555.5
+Minivan,Rear fender,Scrape,Severe,550,275,5.5,85,467.5,1017.5,742.5
+Minivan,Rear fender,Crack,Minor,550,275,2.2,85,187,737,462
+Minivan,Rear fender,Crack,Moderate,550,275,4.4,85,374,924,649
+Minivan,Rear fender,Crack,Severe,550,275,7.2,85,612,1162,887
+Minivan,Rear fender,Dent,Minor,550,275,2.8,85,238,788,513
+Minivan,Rear fender,Dent,Moderate,550,275,5,85,425,975,700
+Minivan,Rear fender,Dent,Severe,550,275,7.7,85,654.5,1204.5,929.5
+Minivan,Rear fender,Missing,Minor,550,275,3.3,85,280.5,830.5,555.5
+Minivan,Rear fender,Missing,Moderate,550,275,5.5,85,467.5,1017.5,742.5
+Minivan,Rear fender,Missing,Severe,550,275,8.8,85,748,1298,1023
+Minivan,Roof,Scrape,Minor,1600,800,2.7,85,229.5,1829.5,1029.5
+Minivan,Roof,Scrape,Moderate,1600,800,5.4,85,459,2059,1259
+Minivan,Roof,Scrape,Severe,1600,800,9,85,765,2365,1565
+Minivan,Roof,Crack,Minor,1600,800,3.6,85,306,1906,1106
+Minivan,Roof,Crack,Moderate,1600,800,7.2,85,612,2212,1412
+Minivan,Roof,Crack,Severe,1600,800,11.7,85,994.5,2594.5,1794.5
+Minivan,Roof,Dent,Minor,1600,800,4.5,85,382.5,1982.5,1182.5
+Minivan,Roof,Dent,Moderate,1600,800,8.1,85,688.5,2288.5,1488.5
+Minivan,Roof,Dent,Severe,1600,800,12.6,85,1071,2671,1871
+Minivan,Roof,Missing,Minor,1600,800,5.4,85,459,2059,1259
+Minivan,Roof,Missing,Moderate,1600,800,9,85,765,2365,1565
+Minivan,Roof,Missing,Severe,1600,800,14.4,85,1224,2824,2024
+Minivan,Taillight,Scrape,Minor,400,200,1,85,85,485,285
+Minivan,Taillight,Scrape,Moderate,400,200,2.1,85,178.5,578.5,378.5
+Minivan,Taillight,Scrape,Severe,400,200,3.5,85,297.5,697.5,497.5
+Minivan,Taillight,Crack,Minor,400,200,1.4,85,119,519,319
+Minivan,Taillight,Crack,Moderate,400,200,2.8,85,238,638,438
+Minivan,Taillight,Crack,Severe,400,200,4.5,85,382.5,782.5,582.5
+Minivan,Taillight,Dent,Minor,400,200,1.8,85,153,553,353
+Minivan,Taillight,Dent,Moderate,400,200,3.1,85,263.5,663.5,463.5
+Minivan,Taillight,Dent,Severe,400,200,4.9,85,416.5,816.5,616.5
+Minivan,Taillight,Missing,Minor,400,200,2.1,85,178.5,578.5,378.5
+Minivan,Taillight,Missing,Moderate,400,200,3.5,85,297.5,697.5,497.5
+Minivan,Taillight,Missing,Severe,400,200,5.6,85,476,876,676
+Minivan,Trunk,Scrape,Minor,600,300,1.8,85,153,753,453
+Minivan,Trunk,Scrape,Moderate,600,300,3.6,85,306,906,606
+Minivan,Trunk,Scrape,Severe,600,300,6,85,510,1110,810
+Minivan,Trunk,Crack,Minor,600,300,2.4,85,204,804,504
+Minivan,Trunk,Crack,Moderate,600,300,4.8,85,408,1008,708
+Minivan,Trunk,Crack,Severe,600,300,7.8,85,663,1263,963
+Minivan,Trunk,Dent,Minor,600,300,3,85,255,855,555
+Minivan,Trunk,Dent,Moderate,600,300,5.4,85,459,1059,759
+Minivan,Trunk,Dent,Severe,600,300,8.4,85,714,1314,1014
+Minivan,Trunk,Missing,Minor,600,300,3.6,85,306,906,606
+Minivan,Trunk,Missing,Moderate,600,300,6,85,510,1110,810
+Minivan,Trunk,Missing,Severe,600,300,9.6,85,816,1416,1116
+Minivan,Wheel,Scrape,Minor,450,225,0.9,85,76.5,526.5,301.5
+Minivan,Wheel,Scrape,Moderate,450,225,1.8,85,153,603,378
+Minivan,Wheel,Scrape,Severe,450,225,3,85,255,705,480
+Minivan,Wheel,Crack,Minor,450,225,1.2,85,102,552,327
+Minivan,Wheel,Crack,Moderate,450,225,2.4,85,204,654,429
+Minivan,Wheel,Crack,Severe,450,225,3.9,85,331.5,781.5,556.5
+Minivan,Wheel,Dent,Minor,450,225,1.5,85,127.5,577.5,352.5
+Minivan,Wheel,Dent,Moderate,450,225,2.7,85,229.5,679.5,454.5
+Minivan,Wheel,Dent,Severe,450,225,4.2,85,357,807,582
+Minivan,Wheel,Missing,Minor,450,225,1.8,85,153,603,378
+Minivan,Wheel,Missing,Moderate,450,225,3,85,255,705,480
+Minivan,Wheel,Missing,Severe,450,225,4.8,85,408,858,633
+Minivan,Window,Scrape,Minor,300,150,1.5,85,127.5,427.5,277.5
+Minivan,Window,Scrape,Moderate,300,150,3,85,255,555,405
+Minivan,Window,Scrape,Severe,300,150,5,85,425,725,575
+Minivan,Window,Crack,Minor,300,150,2,85,170,470,320
+Minivan,Window,Crack,Moderate,300,150,4,85,340,640,490
+Minivan,Window,Crack,Severe,300,150,6.5,85,552.5,852.5,702.5
+Minivan,Window,Dent,Minor,300,150,2.5,85,212.5,512.5,362.5
+Minivan,Window,Dent,Moderate,300,150,4.5,85,382.5,682.5,532.5
+Minivan,Window,Dent,Severe,300,150,7,85,595,895,745
+Minivan,Window,Missing,Minor,300,150,3,85,255,555,405
+Minivan,Window,Missing,Moderate,300,150,5,85,425,725,575
+Minivan,Window,Missing,Severe,300,150,8,85,680,980,830
+Minivan,Windshield,Scrape,Minor,700,350,2,85,170,870,520
+Minivan,Windshield,Scrape,Moderate,700,350,3.9,85,331.5,1031.5,681.5
+Minivan,Windshield,Scrape,Severe,700,350,6.5,85,552.5,1252.5,902.5
+Minivan,Windshield,Crack,Minor,700,350,2.6,85,221,921,571
+Minivan,Windshield,Crack,Moderate,700,350,5.2,85,442,1142,792
+Minivan,Windshield,Crack,Severe,700,350,8.5,85,722.5,1422.5,1072.5
+Minivan,Windshield,Dent,Minor,700,350,3.2,85,272,972,622
+Minivan,Windshield,Dent,Moderate,700,350,5.9,85,501.5,1201.5,851.5
+Minivan,Windshield,Dent,Severe,700,350,9.1,85,773.5,1473.5,1123.5
+Minivan,Windshield,Missing,Minor,700,350,3.9,85,331.5,1031.5,681.5
+Minivan,Windshield,Missing,Moderate,700,350,6.5,85,552.5,1252.5,902.5
+Minivan,Windshield,Missing,Severe,700,350,10.4,85,884,1584,1234
+Sedan,Door,Scrape,Minor,900,450,1.8,85,153,1053,603
+Sedan,Door,Scrape,Moderate,900,450,3.6,85,306,1206,756
+Sedan,Door,Scrape,Severe,900,450,6,85,510,1410,960
+Sedan,Door,Crack,Minor,900,450,2.4,85,204,1104,654
+Sedan,Door,Crack,Moderate,900,450,4.8,85,408,1308,858
+Sedan,Door,Crack,Severe,900,450,7.8,85,663,1563,1113
+Sedan,Door,Dent,Minor,900,450,3,85,255,1155,705
+Sedan,Door,Dent,Moderate,900,450,5.4,85,459,1359,909
+Sedan,Door,Dent,Severe,900,450,8.4,85,714,1614,1164
+Sedan,Door,Missing,Minor,900,450,3.6,85,306,1206,756
+Sedan,Door,Missing,Moderate,900,450,6,85,510,1410,960
+Sedan,Door,Missing,Severe,900,450,9.6,85,816,1716,1266
+Sedan,Front bumper,Scrape,Minor,650,325,1.5,85,127.5,777.5,452.5
+Sedan,Front bumper,Scrape,Moderate,650,325,3,85,255,905,580
+Sedan,Front bumper,Scrape,Severe,650,325,5,85,425,1075,750
+Sedan,Front bumper,Crack,Minor,650,325,2,85,170,820,495
+Sedan,Front bumper,Crack,Moderate,650,325,4,85,340,990,665
+Sedan,Front bumper,Crack,Severe,650,325,6.5,85,552.5,1202.5,877.5
+Sedan,Front bumper,Dent,Minor,650,325,2.5,85,212.5,862.5,537.5
+Sedan,Front bumper,Dent,Moderate,650,325,4.5,85,382.5,1032.5,707.5
+Sedan,Front bumper,Dent,Severe,650,325,7,85,595,1245,920
+Sedan,Front bumper,Missing,Minor,650,325,3,85,255,905,580
+Sedan,Front bumper,Missing,Moderate,650,325,5,85,425,1075,750
+Sedan,Front bumper,Missing,Severe,650,325,8,85,680,1330,1005
+Sedan,Front fender,Scrape,Minor,500,250,1.7,85,144.5,644.5,394.5
+Sedan,Front fender,Scrape,Moderate,500,250,3.3,85,280.5,780.5,530.5
+Sedan,Front fender,Scrape,Severe,500,250,5.5,85,467.5,967.5,717.5
+Sedan,Front fender,Crack,Minor,500,250,2.2,85,187,687,437
+Sedan,Front fender,Crack,Moderate,500,250,4.4,85,374,874,624
+Sedan,Front fender,Crack,Severe,500,250,7.2,85,612,1112,862
+Sedan,Front fender,Dent,Minor,500,250,2.8,85,238,738,488
+Sedan,Front fender,Dent,Moderate,500,250,5,85,425,925,675
+Sedan,Front fender,Dent,Severe,500,250,7.7,85,654.5,1154.5,904.5
+Sedan,Front fender,Missing,Minor,500,250,3.3,85,280.5,780.5,530.5
+Sedan,Front fender,Missing,Moderate,500,250,5.5,85,467.5,967.5,717.5
+Sedan,Front fender,Missing,Severe,500,250,8.8,85,748,1248,998
+Sedan,Headlight,Scrape,Minor,400,200,1.2,85,102,502,302
+Sedan,Headlight,Scrape,Moderate,400,200,2.4,85,204,604,404
+Sedan,Headlight,Scrape,Severe,400,200,4,85,340,740,540
+Sedan,Headlight,Crack,Minor,400,200,1.6,85,136,536,336
+Sedan,Headlight,Crack,Moderate,400,200,3.2,85,272,672,472
+Sedan,Headlight,Crack,Severe,400,200,5.2,85,442,842,642
+Sedan,Headlight,Dent,Minor,400,200,2,85,170,570,370
+Sedan,Headlight,Dent,Moderate,400,200,3.6,85,306,706,506
+Sedan,Headlight,Dent,Severe,400,200,5.6,85,476,876,676
+Sedan,Headlight,Missing,Minor,400,200,2.4,85,204,604,404
+Sedan,Headlight,Missing,Moderate,400,200,4,85,340,740,540
+Sedan,Headlight,Missing,Severe,400,200,6.4,85,544,944,744
+Sedan,Hood,Scrape,Minor,600,300,1.5,85,127.5,727.5,427.5
+Sedan,Hood,Scrape,Moderate,600,300,3,85,255,855,555
+Sedan,Hood,Scrape,Severe,600,300,5,85,425,1025,725
+Sedan,Hood,Crack,Minor,600,300,2,85,170,770,470
+Sedan,Hood,Crack,Moderate,600,300,4,85,340,940,640
+Sedan,Hood,Crack,Severe,600,300,6.5,85,552.5,1152.5,852.5
+Sedan,Hood,Dent,Minor,600,300,2.5,85,212.5,812.5,512.5
+Sedan,Hood,Dent,Moderate,600,300,4.5,85,382.5,982.5,682.5
+Sedan,Hood,Dent,Severe,600,300,7,85,595,1195,895
+Sedan,Hood,Missing,Minor,600,300,3,85,255,855,555
+Sedan,Hood,Missing,Moderate,600,300,5,85,425,1025,725
+Sedan,Hood,Missing,Severe,600,300,8,85,680,1280,980
+Sedan,Rear bumper,Scrape,Minor,600,300,1.5,85,127.5,727.5,427.5
+Sedan,Rear bumper,Scrape,Moderate,600,300,3,85,255,855,555
+Sedan,Rear bumper,Scrape,Severe,600,300,5,85,425,1025,725
+Sedan,Rear bumper,Crack,Minor,600,300,2,85,170,770,470
+Sedan,Rear bumper,Crack,Moderate,600,300,4,85,340,940,640
+Sedan,Rear bumper,Crack,Severe,600,300,6.5,85,552.5,1152.5,852.5
+Sedan,Rear bumper,Dent,Minor,600,300,2.5,85,212.5,812.5,512.5
+Sedan,Rear bumper,Dent,Moderate,600,300,4.5,85,382.5,982.5,682.5
+Sedan,Rear bumper,Dent,Severe,600,300,7,85,595,1195,895
+Sedan,Rear bumper,Missing,Minor,600,300,3,85,255,855,555
+Sedan,Rear bumper,Missing,Moderate,600,300,5,85,425,1025,725
+Sedan,Rear bumper,Missing,Severe,600,300,8,85,680,1280,980
+Sedan,Rear fender,Scrape,Minor,450,225,1.7,85,144.5,594.5,369.5
+Sedan,Rear fender,Scrape,Moderate,450,225,3.3,85,280.5,730.5,505.5
+Sedan,Rear fender,Scrape,Severe,450,225,5.5,85,467.5,917.5,692.5
+Sedan,Rear fender,Crack,Minor,450,225,2.2,85,187,637,412
+Sedan,Rear fender,Crack,Moderate,450,225,4.4,85,374,824,599
+Sedan,Rear fender,Crack,Severe,450,225,7.2,85,612,1062,837
+Sedan,Rear fender,Dent,Minor,450,225,2.8,85,238,688,463
+Sedan,Rear fender,Dent,Moderate,450,225,5,85,425,875,650
+Sedan,Rear fender,Dent,Severe,450,225,7.7,85,654.5,1104.5,879.5
+Sedan,Rear fender,Missing,Minor,450,225,3.3,85,280.5,730.5,505.5
+Sedan,Rear fender,Missing,Moderate,450,225,5.5,85,467.5,917.5,692.5
+Sedan,Rear fender,Missing,Severe,450,225,8.8,85,748,1198,973
+Sedan,Roof,Scrape,Minor,1400,700,2.7,85,229.5,1629.5,929.5
+Sedan,Roof,Scrape,Moderate,1400,700,5.4,85,459,1859,1159
+Sedan,Roof,Scrape,Severe,1400,700,9,85,765,2165,1465
+Sedan,Roof,Crack,Minor,1400,700,3.6,85,306,1706,1006
+Sedan,Roof,Crack,Moderate,1400,700,7.2,85,612,2012,1312
+Sedan,Roof,Crack,Severe,1400,700,11.7,85,994.5,2394.5,1694.5
+Sedan,Roof,Dent,Minor,1400,700,4.5,85,382.5,1782.5,1082.5
+Sedan,Roof,Dent,Moderate,1400,700,8.1,85,688.5,2088.5,1388.5
+Sedan,Roof,Dent,Severe,1400,700,12.6,85,1071,2471,1771
+Sedan,Roof,Missing,Minor,1400,700,5.4,85,459,1859,1159
+Sedan,Roof,Missing,Moderate,1400,700,9,85,765,2165,1465
+Sedan,Roof,Missing,Severe,1400,700,14.4,85,1224,2624,1924
+Sedan,Taillight,Scrape,Minor,350,175,1,85,85,435,260
+Sedan,Taillight,Scrape,Moderate,350,175,2.1,85,178.5,528.5,353.5
+Sedan,Taillight,Scrape,Severe,350,175,3.5,85,297.5,647.5,472.5
+Sedan,Taillight,Crack,Minor,350,175,1.4,85,119,469,294
+Sedan,Taillight,Crack,Moderate,350,175,2.8,85,238,588,413
+Sedan,Taillight,Crack,Severe,350,175,4.5,85,382.5,732.5,557.5
+Sedan,Taillight,Dent,Minor,350,175,1.8,85,153,503,328
+Sedan,Taillight,Dent,Moderate,350,175,3.1,85,263.5,613.5,438.5
+Sedan,Taillight,Dent,Severe,350,175,4.9,85,416.5,766.5,591.5
+Sedan,Taillight,Missing,Minor,350,175,2.1,85,178.5,528.5,353.5
+Sedan,Taillight,Missing,Moderate,350,175,3.5,85,297.5,647.5,472.5
+Sedan,Taillight,Missing,Severe,350,175,5.6,85,476,826,651
+Sedan,Trunk,Scrape,Minor,500,250,1.8,85,153,653,403
+Sedan,Trunk,Scrape,Moderate,500,250,3.6,85,306,806,556
+Sedan,Trunk,Scrape,Severe,500,250,6,85,510,1010,760
+Sedan,Trunk,Crack,Minor,500,250,2.4,85,204,704,454
+Sedan,Trunk,Crack,Moderate,500,250,4.8,85,408,908,658
+Sedan,Trunk,Crack,Severe,500,250,7.8,85,663,1163,913
+Sedan,Trunk,Dent,Minor,500,250,3,85,255,755,505
+Sedan,Trunk,Dent,Moderate,500,250,5.4,85,459,959,709
+Sedan,Trunk,Dent,Severe,500,250,8.4,85,714,1214,964
+Sedan,Trunk,Missing,Minor,500,250,3.6,85,306,806,556
+Sedan,Trunk,Missing,Moderate,500,250,6,85,510,1010,760
+Sedan,Trunk,Missing,Severe,500,250,9.6,85,816,1316,1066
+Sedan,Wheel,Scrape,Minor,350,175,0.9,85,76.5,426.5,251.5
+Sedan,Wheel,Scrape,Moderate,350,175,1.8,85,153,503,328
+Sedan,Wheel,Scrape,Severe,350,175,3,85,255,605,430
+Sedan,Wheel,Crack,Minor,350,175,1.2,85,102,452,277
+Sedan,Wheel,Crack,Moderate,350,175,2.4,85,204,554,379
+Sedan,Wheel,Crack,Severe,350,175,3.9,85,331.5,681.5,506.5
+Sedan,Wheel,Dent,Minor,350,175,1.5,85,127.5,477.5,302.5
+Sedan,Wheel,Dent,Moderate,350,175,2.7,85,229.5,579.5,404.5
+Sedan,Wheel,Dent,Severe,350,175,4.2,85,357,707,532
+Sedan,Wheel,Missing,Minor,350,175,1.8,85,153,503,328
+Sedan,Wheel,Missing,Moderate,350,175,3,85,255,605,430
+Sedan,Wheel,Missing,Severe,350,175,4.8,85,408,758,583
+Sedan,Window,Scrape,Minor,250,125,1.5,85,127.5,377.5,252.5
+Sedan,Window,Scrape,Moderate,250,125,3,85,255,505,380
+Sedan,Window,Scrape,Severe,250,125,5,85,425,675,550
+Sedan,Window,Crack,Minor,250,125,2,85,170,420,295
+Sedan,Window,Crack,Moderate,250,125,4,85,340,590,465
+Sedan,Window,Crack,Severe,250,125,6.5,85,552.5,802.5,677.5
+Sedan,Window,Dent,Minor,250,125,2.5,85,212.5,462.5,337.5
+Sedan,Window,Dent,Moderate,250,125,4.5,85,382.5,632.5,507.5
+Sedan,Window,Dent,Severe,250,125,7,85,595,845,720
+Sedan,Window,Missing,Minor,250,125,3,85,255,505,380
+Sedan,Window,Missing,Moderate,250,125,5,85,425,675,550
+Sedan,Window,Missing,Severe,250,125,8,85,680,930,805
+Sedan,Windshield,Scrape,Minor,600,300,2,85,170,770,470
+Sedan,Windshield,Scrape,Moderate,600,300,3.9,85,331.5,931.5,631.5
+Sedan,Windshield,Scrape,Severe,600,300,6.5,85,552.5,1152.5,852.5
+Sedan,Windshield,Crack,Minor,600,300,2.6,85,221,821,521
+Sedan,Windshield,Crack,Moderate,600,300,5.2,85,442,1042,742
+Sedan,Windshield,Crack,Severe,600,300,8.5,85,722.5,1322.5,1022.5
+Sedan,Windshield,Dent,Minor,600,300,3.2,85,272,872,572
+Sedan,Windshield,Dent,Moderate,600,300,5.9,85,501.5,1101.5,801.5
+Sedan,Windshield,Dent,Severe,600,300,9.1,85,773.5,1373.5,1073.5
+Sedan,Windshield,Missing,Minor,600,300,3.9,85,331.5,931.5,631.5
+Sedan,Windshield,Missing,Moderate,600,300,6.5,85,552.5,1152.5,852.5
+Sedan,Windshield,Missing,Severe,600,300,10.4,85,884,1484,1184
