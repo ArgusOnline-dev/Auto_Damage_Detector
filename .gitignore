@@ -1,3 +1,35 @@
+# Virtual envs and caches
+.venv/
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Node
+node_modules/
+apps/web/node_modules/
+apps/web/.vite/
+apps/web/dist/
+apps/web/.next/
+
+# Training artifacts and datasets (large)
+runs/
+data/datasets/archive/
+data/datasets/processed/
+data/temp/
+
+# Model weights/checkpoints
+*.pt
+*.onnx
+*.engine
+
+# Logs and misc
+*.log
+
 # Python
 __pycache__/
 *.py[cod]

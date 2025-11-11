@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ApexAutoAI Design System - Dark-first car aesthetic */
+
+@layer base {
+  :root {
+    /* Light theme (minimal use) */
+    --background: 210 22% 96%;
+    --foreground: 210 22% 8%;
+    --card: 210 22% 99%;
+    --card-foreground: 210 22% 8%;
+    --popover: 210 22% 99%;
+    --popover-foreground: 210 22% 8%;
+    --primary: 227 64% 33%;
+    --primary-foreground: 210 22% 8%;
+    --secondary: 210 22% 92%;
+    --secondary-foreground: 210 22% 20%;
+    --muted: 210 22% 92%;
+    --muted-foreground: 210 22% 45%;
+    --accent: 38 92% 51%;
+    --accent-foreground: 210 22% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 22% 96%;
+    --border: 210 22% 88%;
+    --input: 210 22% 88%;
+    --ring: 226 83% 55%;
+    --radius: 0.75rem;
+    
+    /* Custom ApexAutoAI tokens */
+    --apex-space: 210 22% 4%;
+    --apex-surface: 210 25% 11%;
+    --apex-surface-hover: 210 25% 15%;
+    --apex-glass: 210 25% 11% / 0.8;
+    --apex-cyan: 227 64% 33%;
+    --apex-magenta: 38 92% 51%;
+    --apex-glow-cyan: 227 64% 33% / 0.2;
+    --apex-glow-magenta: 38 92% 51% / 0.2;
+    --apex-text: 210 22% 90%;
+    --apex-text-muted: 210 16% 65%;
+    --apex-grid: 210 22% 20% / 0.3;
+  }
+
+  .dark {
+    /* Dark theme (primary) - ApexAutoAI colors */
+    --background: 210 22% 4%;
+    --foreground: 210 22% 90%;
+    --card: 210 25% 11%;
+    --card-foreground: 210 22% 90%;
+    --popover: 210 25% 11%;
+    --popover-foreground: 210 22% 90%;
+    --primary: 227 64% 33%;
+    --primary-foreground: 210 22% 90%;
+    --secondary: 210 25% 15%;
+    --secondary-foreground: 210 22% 90%;
+    --muted: 210 25% 15%;
+    --muted-foreground: 210 16% 65%;
+    --accent: 38 92% 51%;
+    --accent-foreground: 210 22% 4%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 22% 90%;
+    --border: 210 25% 15%;
+    --input: 210 25% 15%;
+    --ring: 226 83% 55%;
+    
+    /* Custom ApexAutoAI tokens */
+    --apex-space: 210 22% 4%;
+    --apex-surface: 210 25% 11%;
+    --apex-surface-hover: 210 25% 15%;
+    --apex-glass: 210 25% 11% / 0.8;
+    --apex-cyan: 227 64% 33%;
+    --apex-magenta: 38 92% 51%;
+    --apex-glow-cyan: 227 64% 33% / 0.2;
+    --apex-glow-magenta: 38 92% 51% / 0.2;
+    --apex-text: 210 22% 90%;
+    --apex-text-muted: 210 16% 65%;
+    --apex-grid: 210 22% 20% / 0.3;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer components {
+  /* Glass morphism card effect */
+  .glass-card {
+    @apply bg-apex-glass backdrop-blur-sm border border-white/10;
+    box-shadow: 0 8px 32px hsl(var(--apex-glow-cyan));
+  }
+  
+  /* Neon glow effects */
+  .glow-cyan {
+    box-shadow: 0 0 20px hsl(var(--apex-glow-cyan)), 0 0 40px hsl(var(--apex-glow-cyan));
+  }
+  
+  .glow-magenta {
+    box-shadow: 0 0 20px hsl(var(--apex-glow-magenta)), 0 0 40px hsl(var(--apex-glow-magenta));
+  }
+  
+  /* Grid overlay pattern */
+  .grid-pattern {
+    background-image: 
+      linear-gradient(hsl(var(--apex-grid)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--apex-grid)) 1px, transparent 1px);
+    background-size: 2rem 2rem;
+  }
+  
+  /* Subtle dot grid pattern */
+  .dot-grid {
+    background-image:
+      radial-gradient(circle at center, hsl(var(--apex-grid)) 1px, transparent 1.5px);
+    background-size: 22px 22px;
+    background-position: 0 0;
+  }
+  
+  /* Smooth transitions */
+  .smooth-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-apex-surface;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
+  }
+}
+
+/* Print styles for reports */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .glass-card {
+    background: white !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+  
+  .text-apex-text {
+    color: black !important;
+  }
+  
+  .text-apex-text-muted {
+    color: #666 !important;
+  }
+  
+  .text-apex-cyan {
+    color: #0066cc !important;
+  }
+  
+  nav, footer {
+    display: none !important;
+  }
+}
