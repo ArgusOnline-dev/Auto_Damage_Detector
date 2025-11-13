@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { Upload as UploadIcon, X, Download, Save, Loader2, Eye } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Checkbox } from '@/components/ui/checkbox'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { uploadImages, runInference, getEstimate, downloadPDFReport, type Detection, type EstimateResponse } from '@/lib/api'
 import { useToast } from '@/hooks/use-toast'
@@ -13,6 +14,7 @@ import { useToast } from '@/hooks/use-toast'
 // Frontend DamageDetection interface (for UI display)
 interface DamageDetection {
   id: string
+  imageId: string
   part: string
   damage: string
   severity: 'minor' | 'moderate' | 'severe'
@@ -23,24 +25,47 @@ interface DamageDetection {
   y: number
   width: number
   height: number
+  confidence: number
 }
 
 export default function Upload() {
   const [files, setFiles] = useState<File[]>([])
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [detections, setDetections] = useState<DamageDetection[]>([])
-  const [selectedImage, setSelectedImage] = useState<File | null>(null)
+  const [selectedFileIndex, setSelectedFileIndex] = useState(0)
   const [laborRate, setLaborRate] = useState(150)
   const [partsPreference, setPartsPreference] = useState<'oem' | 'used' | 'both'>('oem')
   const [fileIds, setFileIds] = useState<string[]>([])
   const [estimate, setEstimate] = useState<EstimateResponse | null>(null)
+  const [includeIntact, setIncludeIntact] = useState<boolean>(false) // Hide intact by default
+  const [imageDimensions, setImageDimensions] = useState<Record<string, { width: number, height: number }>>({})
   const { toast } = useToast()
+  const selectedImage = files[selectedFileIndex] || null
+  const selectedFileId = fileIds[selectedFileIndex] || ''
+  const severityColors: Record<'minor' | 'moderate' | 'severe', string> = {
+    minor: '#FFD166',
+    moderate: '#FB8500',
+    severe: '#D90429'
+  }
+  const visibleDetections = selectedFileId
+    ? detections.filter(det => det.imageId === selectedFileId)
+    : detections
+  const clampPercent = (value: number) => Math.min(100, Math.max(0, value))
+
+  useEffect(() => {
+    if (selectedFileIndex >= files.length && files.length > 0) {
+      setSelectedFileIndex(files.length - 1)
+    }
+  }, [files.length, selectedFileIndex])
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
-    setFiles(prev => [...prev, ...acceptedFiles])
-    if (acceptedFiles.length > 0) {
-      setSelectedImage(acceptedFiles[0])
-    }
+    setFiles(prev => {
+      const newFiles = [...prev, ...acceptedFiles]
+      if (prev.length === 0 && newFiles.length > 0) {
+        setSelectedFileIndex(0)
+      }
+      return newFiles
+    })
   }, [])
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -54,8 +79,12 @@ export default function Upload() {
   const removeFile = (index: number) => {
     setFiles(prev => {
       const newFiles = prev.filter((_, i) => i !== index)
-      if (selectedImage === prev[index]) {
-        setSelectedImage(newFiles[0] || null)
+      if (newFiles.length === 0) {
+        setSelectedFileIndex(0)
+      } else if (index === selectedFileIndex) {
+        setSelectedFileIndex(0)
+      } else if (index < selectedFileIndex) {
+        setSelectedFileIndex(Math.max(0, selectedFileIndex - 1))
       }
       return newFiles
     })
@@ -84,20 +113,48 @@ export default function Upload() {
       }
       
       // Step 2: Run inference
-      console.log('Running inference...', uploadedFileIds)
-      const inferenceResult = await runInference(uploadedFileIds)
+      console.log('Running inference...', uploadedFileIds, 'includeIntact:', includeIntact)
+      const inferenceResult = await runInference(uploadedFileIds, includeIntact)
       console.log('Inference result:', inferenceResult)
       
-      if (!inferenceResult || !inferenceResult.detections) {
+      if (!inferenceResult || !inferenceResult.results || inferenceResult.results.length === 0) {
         throw new Error('Invalid inference result received')
+      }
+      
+      // Combine detections from all images
+      const backendDetections: Detection[] = []
+      const flattenedDetections: { det: Detection; imageId: string }[] = []
+      inferenceResult.results.forEach((result) => {
+        result.detections.forEach((det) => {
+          backendDetections.push(det)
+          flattenedDetections.push({ det, imageId: result.image_id })
+        })
+      })
+      
+      console.log(`Total detections across ${inferenceResult.results.length} image(s): ${backendDetections.length}`)
+      if (inferenceResult.filtered_count > 0) {
+        console.log(`Filtered out ${inferenceResult.filtered_count} intact detections`)
+      }
+      
+      if (backendDetections.length === 0) {
+        toast({
+          title: "No damage detected",
+          description: includeIntact 
+            ? "No detections found in uploaded images." 
+            : "No damaged parts detected. All parts appear intact. Try enabling 'Show Intact Parts' to see all detections.",
+          variant: "default"
+        })
+        setDetections([])
+        setIsAnalyzing(false)
+        return
       }
       
       // Step 3: Get cost estimate
       // Backend only supports 'oem' or 'used', so use 'oem' for 'both' option
       const useOemParts = partsPreference === 'oem' || partsPreference === 'both'
-      console.log('Getting estimate...', inferenceResult.detections.length, 'detections')
+      console.log('Getting estimate...', backendDetections.length, 'detections')
       const estimateResult = await getEstimate(
-        inferenceResult.detections,
+        backendDetections,
         laborRate,
         useOemParts
       )
@@ -109,13 +166,15 @@ export default function Upload() {
       }
       
       // Step 4: Map backend detections to frontend format
-      const mappedDetections: DamageDetection[] = inferenceResult.detections.map((det, index) => {
+      const selectedFileIdForFirstImage = uploadedFileIds[0]
+      const mappedDetections: DamageDetection[] = flattenedDetections.map(({ det, imageId }, index) => {
         // Convert bbox [x1, y1, x2, y2] to x, y, width, height
         if (!det.bbox || det.bbox.length !== 4) {
           console.warn('Invalid bbox for detection:', det)
           // Use default bbox if invalid
           return {
             id: `${det.part}-${index}`,
+            imageId: imageId || selectedFileIdForFirstImage,
             part: det.part,
             damage: det.damage_type,
             severity: (det.severity || 'moderate') as 'minor' | 'moderate' | 'severe',
@@ -125,7 +184,8 @@ export default function Upload() {
             x: 0,
             y: 0,
             width: 100,
-            height: 100
+            height: 100,
+            confidence: det.confidence || 0
           }
         }
         
@@ -140,6 +200,7 @@ export default function Upload() {
         
         return {
           id: `${det.part}-${index}`,
+          imageId: imageId || selectedFileIdForFirstImage,
           part: det.part,
           damage: det.damage_type,
           severity: (det.severity || 'moderate') as 'minor' | 'moderate' | 'severe',
@@ -149,7 +210,8 @@ export default function Upload() {
           x,
           y,
           width,
-          height
+          height,
+          confidence: det.confidence || 0
         }
       })
       
@@ -171,27 +233,32 @@ export default function Upload() {
     }
   }
 
-  const updateDetection = (id: string, field: keyof DamageDetection, value: any) => {
-    setDetections(prev => prev.map(det => 
-      det.id === id ? { ...det, [field]: value } : det
-    ))
+  const updateDetection = (id: string, field: keyof DamageDetection, value: any, shouldRecalculate = false) => {
+    setDetections(prev => {
+      const updated = prev.map(det => 
+        det.id === id ? { ...det, [field]: value } : det
+      )
+      if (shouldRecalculate) {
+        updateEstimate(updated)
+      }
+      return updated
+    })
   }
 
-  // Re-fetch estimate when labor rate or parts preference changes
-  const updateEstimate = async () => {
-    if (detections.length === 0 || !fileIds.length) return
+  // Re-fetch estimate when values change
+  const updateEstimate = async (overrideDetections?: DamageDetection[]) => {
+    const sourceDetections = overrideDetections ?? detections
+    if (sourceDetections.length === 0 || !fileIds.length) return
 
     try {
-      // Map detections back to backend format
-      const backendDetections: Detection[] = detections.map(det => ({
+      const backendDetections: Detection[] = sourceDetections.map(det => ({
         part: det.part,
         damage_type: det.damage,
-        confidence: 0.85,
+        confidence: det.confidence ?? 0.85,
         bbox: [det.x, det.y, det.x + det.width, det.y + det.height],
         severity: det.severity
       }))
 
-      // Backend only supports 'oem' or 'used', so use 'oem' for 'both' option
       const useOemParts = partsPreference === 'oem' || partsPreference === 'both'
       const estimateResult = await getEstimate(
         backendDetections,
@@ -200,16 +267,19 @@ export default function Upload() {
       )
       setEstimate(estimateResult)
 
-      // Update detections with new cost data
-      setDetections(prev => prev.map((det, index) => {
-        const lineItem = estimateResult.line_items[index] || estimateResult.line_items[0]
-        return {
-          ...det,
-          laborHours: lineItem?.labor_hours || det.laborHours,
-          partsNew: lineItem?.part_cost_new || det.partsNew,
-          partsUsed: lineItem?.part_cost_used || det.partsUsed
-        }
-      }))
+      const applyLineItems = (list: DamageDetection[]) =>
+        list.map((det, index) => {
+          const lineItem = estimateResult.line_items[index] || estimateResult.line_items[estimateResult.line_items.length - 1]
+          return {
+            ...det,
+            laborHours: lineItem?.labor_hours ?? det.laborHours,
+            partsNew: lineItem?.part_cost_new ?? det.partsNew,
+            partsUsed: lineItem?.part_cost_used ?? det.partsUsed
+          }
+        })
+
+      const updatedList = applyLineItems(sourceDetections)
+      setDetections(updatedList)
     } catch (error: any) {
       toast({
         title: "Estimate update failed",
@@ -349,11 +419,11 @@ export default function Upload() {
                     <div
                       key={index}
                       className={`p-3 rounded-lg bg-apex-surface border smooth-transition cursor-pointer ${
-                        selectedImage === file
+                        selectedFileIndex === index
                           ? 'border-apex-cyan glow-cyan'
                           : 'border-white/10 hover:border-white/20'
                       }`}
-                      onClick={() => setSelectedImage(file)}
+                      onClick={() => setSelectedFileIndex(index)}
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2 min-w-0">
@@ -404,6 +474,22 @@ export default function Upload() {
                 </Select>
               </div>
             </div>
+            
+            {/* Show Intact Parts Toggle */}
+            <div className="mt-4 flex items-center space-x-2">
+              <Checkbox
+                id="include-intact"
+                checked={includeIntact}
+                onCheckedChange={(checked) => setIncludeIntact(checked === true)}
+                className="border-white/20"
+              />
+              <Label
+                htmlFor="include-intact"
+                className="text-apex-text cursor-pointer"
+              >
+                Show intact parts (parts with no damage)
+              </Label>
+            </div>
 
             <div className="flex justify-center mt-6">
               <Button
@@ -443,24 +529,47 @@ export default function Upload() {
                       src={URL.createObjectURL(selectedImage)}
                       alt="Vehicle damage"
                       className="w-full h-auto rounded-lg"
+                      onLoad={(e) => {
+                        if (selectedFileId) {
+                          setImageDimensions(prev => ({
+                            ...prev,
+                            [selectedFileId]: {
+                              width: e.currentTarget.naturalWidth,
+                              height: e.currentTarget.naturalHeight
+                            }
+                          }))
+                        }
+                      }}
                     />
                     {/* Detection boxes overlay */}
-                    {detections.map((detection) => (
+                    {visibleDetections.map((detection) => {
+                      const dims = imageDimensions[detection.imageId || selectedFileId] || imageDimensions[selectedFileId] || { width: 1, height: 1 }
+                      const left = clampPercent((detection.x / dims.width) * 100)
+                      const top = clampPercent((detection.y / dims.height) * 100)
+                      const width = clampPercent((detection.width / dims.width) * 100)
+                      const height = clampPercent((detection.height / dims.height) * 100)
+                      const severityColor = severityColors[detection.severity] || severityColors.moderate
+                      return (
                       <div
                         key={detection.id}
-                        className="absolute border-2 border-red-500 bg-red-500/20"
+                        className="absolute rounded-sm"
                         style={{
-                          left: `${(detection.x / 400) * 100}%`,
-                          top: `${(detection.y / 300) * 100}%`,
-                          width: `${(detection.width / 400) * 100}%`,
-                          height: `${(detection.height / 300) * 100}%`,
+                          left: `${left}%`,
+                          top: `${top}%`,
+                          width: `${width}%`,
+                          height: `${height}%`,
+                          border: `2px solid ${severityColor}`,
+                          backgroundColor: `${severityColor}20`
                         }}
                       >
-                        <div className="absolute -top-6 left-0 bg-red-500 text-white text-xs px-1 rounded">
-                          {detection.part}
+                        <div
+                          className="absolute -top-6 left-0 text-white text-xs px-1 rounded"
+                          style={{ backgroundColor: severityColor }}
+                        >
+                          {detection.part} • {detection.severity}
                         </div>
                       </div>
-                    ))}
+                    )})}
                   </div>
                 )}
               </CardContent>
@@ -495,7 +604,7 @@ export default function Upload() {
                             <Select
                               value={detection.severity}
                               onValueChange={(value: 'minor' | 'moderate' | 'severe') => 
-                                updateDetection(detection.id, 'severity', value)
+                                updateDetection(detection.id, 'severity', value, true)
                               }
                             >
                               <SelectTrigger className="bg-apex-surface border-white/10 text-apex-text">
@@ -513,7 +622,7 @@ export default function Upload() {
                               type="number"
                               step="0.5"
                               value={detection.laborHours}
-                              onChange={(e) => updateDetection(detection.id, 'laborHours', Number(e.target.value))}
+                              onChange={(e) => updateDetection(detection.id, 'laborHours', Number(e.target.value), true)}
                               className="bg-apex-surface border-white/10 text-apex-text w-20"
                             />
                           </TableCell>

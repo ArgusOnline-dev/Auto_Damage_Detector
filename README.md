@@ -1,124 +1,108 @@
 # 🚗 AI-Powered Auto Damage Estimator
 
-An AI-powered web application that detects car damages from uploaded photos and generates transparent repair cost estimates.
+An AI-powered web application that detects car damage from uploaded photos and generates transparent repair cost estimates.
 
 ## 🧩 Overview
 
-This project aims to build an MVP that focuses on consumers and small businesses (mechanic shops, towing companies, rental fleets), emphasizing **transparency, explainability, and affordability**.
+The current MVP focuses on consumers and small businesses that need quick, explainable repair estimates. The backend (FastAPI) runs a two-stage YOLOv8 pipeline (parts + damage) and a CSV-driven cost engine. The frontend (React + Vite + Tailwind) lets users upload photos, review detections, tweak severity/labor/OEM settings, and export PDF reports.
 
-## ⚙️ Features
+## ⚙️ Implemented Features
 
-- **Upload**: Users can upload multiple car photos (front, sides, rear)
-- **Detection**: YOLOv8 model detects 10–12 key parts and labels damage type (dent, scrape, crack, missing, intact)
-- **Severity**: Damage severity bucketed into minor, moderate, or severe using rules
-- **Cost Engine**: CSV-driven rules: labor hours × labor rate, parts costs (new/used ranges), paint/material adders
-- **Report**: Line-item estimate with totals (min/likely/max). Export as PDF
-- **Explainability**: Transparent mapping from detection → severity → cost rules. Optional GPT summary for human-readable report
-- **User Input**: Users can set labor rate, toggle OEM/Used parts, and edit severity for accuracy
+- **Uploads**: Drag-and-drop multiple photos; optional toggle to show intact parts.
+- **Detection**: Stage 1 YOLO detects body parts; Stage 2 YOLO assigns damage classes (`dent`, `scratch`, `cracked`, `missing_part`, etc.).
+- **Severity**: Backend heuristics map damage type + confidence to `minor/moderate/severe`, but users can override and re-run estimates instantly.
+- **Cost Engine**: `data/auto_damage_repair_costs_MASTER.csv` drives labor hours, parts cost (OEM vs used), and totals (min/likely/max).
+- **Reports**: Downloadable PDF showing detections, line items, and totals. “Save draft” currently stores data locally (browser `localStorage`).
+- **Explainability**: API response includes each detection’s part/damage/severity plus filtered counts so the frontend can show only what matters.
 
 ## 🛠️ Tech Stack
 
-- **Backend**: FastAPI (Python)
-- **Frontend**: Streamlit
-- **ML Model**: YOLOv8n (trained on Kaggle/Roboflow datasets)
-- **Storage**: Supabase (free tier)
-- **APIs**: NHTSA (VIN decode), OpenAI (optional GPT summaries)
+| Area        | Technology                                  |
+|-------------|---------------------------------------------|
+| Backend     | FastAPI, Pydantic v2, Uvicorn               |
+| Frontend    | React 18, Vite, TypeScript, Tailwind CSS    |
+| ML          | YOLOv8n (Ultralytics) – two-stage pipeline  |
+| Storage     | Local filesystem (uploads, models)          |
+| Docs/Plans  | `docs/phases/<phase>/plan|implementation|test` |
+
+VIN decode / GPT summary are **out of scope** for this MVP.
 
 ## 📁 Project Structure
 
 ```
-Auto_Damage_Project/
+Auto_Damage_Detector/
 ├── apps/
-│   ├── api/              # FastAPI Backend
-│   │   ├── core/         # Configuration, dependencies
-│   │   ├── routes/       # API endpoints
-│   │   ├── services/     # Business logic
-│   │   │   ├── ml/       # ML inference (User)
-│   │   │   ├── cost_engine/  # Cost calculation (Saad)
-│   │   │   ├── severity/     # Severity scoring (Saad)
-│   │   │   └── integration/   # External APIs (Shared)
-│   │   ├── models/       # Database models
-│   │   └── utils/        # Utility functions
-│   └── web/              # Streamlit Frontend (placeholder)
-├── docs/                 # Documentation
-│   ├── plans/            # Feature/system plans
-│   ├── data/             # Data documentation
-│   └── system/          # Technical documentation
-├── data/                 # Data files
-│   ├── cost_rules.csv    # Cost estimation rules (Saad)
-│   └── datasets/         # Training datasets (User)
-├── models/               # Trained ML models
-└── infra/                # Infrastructure configs
+│   ├── api/                  # FastAPI backend
+│   │   ├── core/             # config, exceptions
+│   │   ├── routes/           # /upload, /infer, /estimate, /report
+│   │   ├── services/
+│   │   │   ├── ml/           # two-stage model loader + inference
+│   │   │   ├── cost_engine/  # CSV-driven cost calculator
+│   │   │   └── severity/     # severity heuristics
+│   │   └── utils/            # file handling, PDF helpers
+│   └── web/                  # React frontend (Vite)
+├── data/                     # datasets + cost rules
+├── models/                   # YOLO weight files (not in git)
+├── docs/                     # context + per-phase plans/tests
+└── requirements.txt          # backend deps
 ```
-
-## 👥 Team Assignments
-
-### Saad's Domain (Cost Estimation)
-- Step 1: Define scope, create `cost_rules.csv`
-- Step 6: Integrate severity scoring + cost engine
-- Step 5 (maybe): Streamlit UI cost estimate table integration
-
-### User's Domain (Backend/ML)
-- Step 2-3: Dataset collection, labeling, YOLOv8 training
-- Step 4: FastAPI backend (`/upload`, `/infer`, `/estimate`, `/report`)
-- Step 7-8: User edits, VIN decode, GPT summary
-- Backend integration and ML inference
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.10+
-- Git
+- Node 18+ and `pnpm` (or npm/yarn if you prefer)
 
-### Setup
-1. Clone the repository
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Backend Setup
+```bash
+cd Auto_Damage_Detector
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+uvicorn apps.api.main:app --reload
+```
 
-### Development Workflow
+Environment variables (optional) live in `.env`. Useful overrides:
+```
+PART_MODEL_PATH=models/yolov8n_part_detector.pt
+DAMAGE_MODEL_PATH=models/yolov8n_damage.pt
+COST_RULES_PATH=data/auto_damage_repair_costs_MASTER.csv
+```
 
-We follow a strict **Plan → Implement → Test** cycle for all features:
+### Frontend Setup
+```bash
+cd Auto_Damage_Detector/apps/web
+pnpm install        # or npm install
+pnpm dev            # starts Vite dev server
+```
 
-1. **Plan**: Discuss feature ideas, create detailed plan document in `docs/plans/`
-2. **Implement**: Develop the feature according to the plan
-3. **Test**: Comprehensive testing from user perspective (frontend + backend)
+The frontend expects the backend at `http://localhost:8000`. Adjust `VITE_API_BASE_URL` in `apps/web/.env` if needed.
 
-All plans are stored in `docs/plans/` following the `PLAN_TEMPLATE.md` format.
+## ✅ Tests
+
+Two end-to-end scripts exercise backend+frontend contracts. Run them while the backend is up:
+
+```bash
+# Multi-image inference + intact filtering + /estimate
+python docs/phases/ml-model-training/test/test_two_stage_integration.py
+
+# Cost engine + severity overrides + OEM toggle
+python docs/phases/cost-engine-integration/test/test_cost_engine.py
+```
+
+Each script logs PASS/FAIL along with totals. Detailed instructions/results live in the respective `docs/phases/**/test/README.md`.
 
 ## 📚 Documentation
-
-- **Project Plan**: `docs/auto_damage_ai_project_plan.md`
-- **Development Context**: `docs/DEVELOPMENT_CONTEXT.md`
-- **Feature Plans**: `docs/plans/`
-
-## 📅 Timeline
-
-Targeting MVP demo by November with phases from September through mid-November.
-
-## 💰 Estimated MVP Costs
-
-All components use free tiers:
-- Model Training: Kaggle/Colab (free tier) - $0
-- Backend Hosting: Render/Railway (free tier) - $0
-- Frontend: Streamlit Cloud (free tier) - $0
-- Database/Storage: Supabase (free tier) - $0
-- VIN Decode: NHTSA API (free) - $0
-- GPT Summary (optional): ~$0.06–$0.10/month
-
-**Total: <$1/month**
+- Development context & workflow: `docs/DEVELOPMENT_CONTEXT.md`
+- Per-phase plans/impl/tests: `docs/phases/<phase>/`
+- Cost rules CSV: `data/auto_damage_repair_costs_MASTER.csv`
 
 ## 📝 License
 
-[To be determined]
+TBD — choose the license you need before publishing.
 
 ---
 
-**Status**: Initial setup phase - File structure and documentation in progress
+Status: MVP features implemented (two-stage detection, severity rules, cost engine, React UI). Remaining nice-to-haves: VIN/GPT, real draft/report persistence, optional frontend polish items noted in `docs/phases/frontend-polish/`.
 

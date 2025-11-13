@@ -22,6 +22,17 @@ class Settings(BaseSettings):
     ALLOWED_EXTENSIONS: List[str] = [".jpg", ".jpeg", ".png"]
     UPLOAD_DIR: Path = Path("data/uploads")
     TEMP_DIR: Path = Path("data/temp")
+
+    # ML Model Settings
+    # Stage 1: Parts-only detector (detects car parts without damage types)
+    PART_MODEL_PATH: Path = Path(os.getenv("PART_MODEL_PATH", "models/yolov8n_part_detector.pt"))
+    # Stage 2: Damage-only detector (detects damage types: dent, scratch, intact, etc.)
+    DAMAGE_MODEL_PATH: Path = Path(os.getenv("DAMAGE_MODEL_PATH", "models/yolov8n_damage.pt"))
+    ML_DEVICE: str = os.getenv("ML_DEVICE", "cpu")
+    PART_CONF_THRESHOLD: float = float(os.getenv("PART_CONF_THRESHOLD", "0.25"))
+    DAMAGE_CONF_THRESHOLD: float = float(os.getenv("DAMAGE_CONF_THRESHOLD", "0.25"))
+    DAMAGE_MATCH_MIN_IOU: float = float(os.getenv("DAMAGE_MATCH_MIN_IOU", "0.1"))
+    COST_RULES_PATH: Path = Path(os.getenv("COST_RULES_PATH", "data/auto_damage_repair_costs_MASTER.csv"))
     
     # CORS Settings
     CORS_ORIGINS: List[str] = ["*"]  # Allow all origins for now

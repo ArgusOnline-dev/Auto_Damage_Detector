@@ -1,5 +1,6 @@
 # Virtual envs and caches
 .venv/
+local_env_backup/
 __pycache__/
 *.pyc
 
@@ -18,9 +19,10 @@ apps/web/.next/
 
 # Training artifacts and datasets (large)
 runs/
-data/datasets/archive/
-data/datasets/processed/
+# Local datasets/regenerated artifacts
+data/datasets/
 data/temp/
+data/uploads/
 
 # Model weights/checkpoints
 *.pt
