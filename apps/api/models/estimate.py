@@ -52,6 +52,7 @@ class EstimateRequest(BaseModel):
     detections: List[dict] = Field(..., min_length=0, description="List of detection results")
     labor_rate: float = Field(default=150.0, ge=0, description="Labor rate per hour")
     use_oem_parts: bool = Field(default=True, description="Use OEM parts (True) or used parts (False)")
+    car_type: str = Field(default="Super", description="Car type segment for cost rules (e.g., Super, Sedan)")
     
     class Config:
         json_schema_extra = {
@@ -66,7 +67,8 @@ class EstimateRequest(BaseModel):
                     }
                 ],
                 "labor_rate": 150.0,
-                "use_oem_parts": True
+                "use_oem_parts": True,
+                "car_type": "Super"
             }
         }
 

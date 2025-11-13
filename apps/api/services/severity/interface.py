@@ -1,48 +1,62 @@
-"""Severity scoring interface for Saad's severity service."""
+"""Severity scoring rules."""
 from typing import List
-import random
+
+from apps.api.core.config import settings
+
+
+def _normalize_severity(value: str) -> str:
+    if not value:
+        return ""
+    return value.strip().lower()
+
+
+def _map_severity(damage_type: str, confidence: float) -> str:
+    dt = (damage_type or "").lower()
+    conf = confidence or 0.0
+
+    if dt in {"missing_part", "missing", "broken_part"}:
+        return "severe"
+    if dt == "cracked" or dt == "crack":
+        if conf >= 0.8:
+            return "severe"
+        if conf >= 0.5:
+            return "moderate"
+        return "minor"
+    if dt == "dent":
+        if conf >= 0.85:
+            return "severe"
+        if conf >= 0.5:
+            return "moderate"
+        return "minor"
+    if dt in {"scratch", "paint_chip", "flaking", "corrosion", "scrape"}:
+        if conf >= 0.7:
+            return "moderate"
+        return "minor"
+    return "minor"
 
 
 def score_severity(detections: List[dict]) -> List[dict]:
     """
-    Score severity for detections (placeholder).
-    
-    This is an interface for Saad's severity scoring service.
-    When Saad implements the actual severity scoring (Step 6), this will call his service.
-    
+    Score severity for detections using deterministic rules.
+
     Args:
-        detections: List of detection results without severity
-        
+        detections: List of detection results. Each detection must include `damage_type`
+                    and optionally `severity` (user override) and `confidence`.
+
     Returns:
-        List of detections with severity added
+        List of detections with severity added/normalized.
     """
-    # Mock severity scoring for testing
-    # This will be replaced with actual severity scoring when Saad's service is ready
-    
-    severity_levels = ["minor", "moderate", "severe"]
-    
-    # Add severity to each detection based on mock rules
-    scored_detections = []
+    scored: List[dict] = []
     for detection in detections:
-        detection_copy = detection.copy()
-        
-        # Mock severity assignment based on damage type and confidence
-        damage_type = detection.get("damage_type", "").lower()
-        confidence = detection.get("confidence", 0.5)
-        
-        # Simple mock logic: higher confidence + certain damage types = higher severity
-        if damage_type == "missing":
-            detection_copy["severity"] = random.choice(["moderate", "severe"])
-        elif damage_type == "crack":
-            detection_copy["severity"] = random.choice(["minor", "moderate"])
-        elif damage_type == "dent":
-            detection_copy["severity"] = "moderate" if confidence > 0.8 else "minor"
-        elif damage_type == "scrape":
-            detection_copy["severity"] = "minor" if confidence > 0.7 else "moderate"
+        entry = detection.copy()
+        existing = _normalize_severity(entry.get("severity", ""))
+        if existing in {"minor", "moderate", "severe"}:
+            entry["severity"] = existing
         else:
-            detection_copy["severity"] = random.choice(severity_levels)
-        
-        scored_detections.append(detection_copy)
-    
-    return scored_detections
+            damage_type = entry.get("damage_type", "")
+            confidence = entry.get("confidence") or 0.0
+            severity = _map_severity(damage_type, confidence)
+            entry["severity"] = severity
+        scored.append(entry)
+    return scored
 

@@ -31,7 +31,8 @@ async def estimate_cost(request: EstimateRequest):
         result = calculate_cost(
             scored_detections,
             labor_rate=request.labor_rate,
-            use_oem_parts=request.use_oem_parts
+            use_oem_parts=request.use_oem_parts,
+            car_type=request.car_type,
         )
         
         return EstimateResponse(**result)
