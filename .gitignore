@@ -78,6 +78,9 @@ models/*.pth
 models/*.onnx
 models/*.h5
 *.weights
+!models/yolov8n_damage.pt
+!models/yolov8n_part_damage.pt
+!models/yolov8n_part_detector.pt
 
 # Dataset files (large)
 data/datasets/images/*
